@@ -1,0 +1,54 @@
+---
+tags:
+  - agenticbrain
+  - router
+  - projects
+  - brief
+topics:
+  - service-offering
+  - project-brief
+agenticbrain: true
+agent-role: [router]
+last-tagged: 2026-04-15
+---
+
+# AI Coaching & Tutoring Business
+
+> Local AI guide for non-technical individuals in the Pacific City → Portland corridor.
+
+## Overview
+A service business built around Ernest of Gaia's positioning as a "Local A.I. Guide" — meeting non-technical clients where they are and helping them integrate AI tools into their everyday work and life. The brand draws on a nature-based, tradesperson aesthetic and targets the Oregon coast and Portland metro before expanding internationally to Western Sydney, Australia.
+
+## Status
+**Active** — Pricing model locked, brand DNA defined. Oregon market launch gated on ernestofgaia.xyz going live.
+
+## Goals
+- Build a clientele of local small business owners, creators, and founders
+- Deliver tiered coaching sessions calibrated to Oregon market ($75–$165/session)
+- Operate with a nonprofit giveback: 1 free session per 12 paid client hours
+- Validate Oregon market before replicating in Western Sydney / Penrith
+- Manage client relationships using Claude Projects
+
+## Pricing Tiers
+
+| Tier | Focus | Rate |
+|------|-------|------|
+| Tier 1 — Foundations | Beginners, personal productivity | $75/session |
+| Tier 2 — Workshop | Creators and builders | $110/session |
+| Tier 3 — Masterclass | Founders and operators | $165/session |
+
+Engagement packages: 3-month, 6-month, 9-month options available.
+
+## Tech Stack
+- Claude Projects (client context management)
+- ernestofgaia.xyz (agent-powered booking and inquiry interface)
+- Google Calendar (scheduling)
+
+## Key Links
+- **Website:** [ernestofgaia.xyz](https://ernestofgaia.xyz)
+
+## Next Steps
+- Launch main site to unlock business card printing
+- Acquire first 3 Oregon coaching clients
+- Document client session outcomes for case studies
+- Begin Australia expansion planning post-visa approval

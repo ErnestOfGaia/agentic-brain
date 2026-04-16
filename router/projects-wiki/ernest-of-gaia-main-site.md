@@ -1,0 +1,55 @@
+---
+tags:
+  - agenticbrain
+  - router
+  - marketing
+  - secretary
+  - recruiter
+  - projects
+  - brief
+topics:
+  - project-brief
+  - infrastructure
+agenticbrain: true
+agent-role: [router, marketing, secretary, recruiter]
+last-tagged: 2026-04-15
+---
+
+# Ernest of Gaia — Main Coaching Site
+
+> The digital front door for the Ernest of Gaia AI coaching brand.
+
+## Overview
+The primary public-facing website for Ernest of Gaia's AI coaching and consulting services. Built as an interactive experience with an embedded agent interface that routes visitors to the right service (coaching inquiry, scheduling, or hiring). Currently in active Spring Sprint development ahead of business card printing.
+
+## Status
+**Active Sprint** — Week 1–3 of Spring Sprint. Chat agents functional; SEO polish in progress.
+
+## Goals
+- Launch a fully functional, mobile-responsive coaching site
+- Integrate three sub-agents: Marketer (coaching inquiries), Secretary (scheduling), Recruiter (hiring)
+- Implement GEO/SEO layer (`llms.txt`, JSON-LD, semantic HTML)
+- Serve as live proof-of-work for coaching clientele
+- Pass performance benchmarks: <2s load on mobile 4G
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Frontend | React 19 + TypeScript + Vite |
+| Agents | Mastra framework + Claude API (Haiku model) |
+| Hosting | Hostinger VPS (Ubuntu 24.04) |
+| CI/CD | GitHub Actions → GHCR → VPS pull |
+| Proxy/SSL | Nginx Proxy Manager + Let's Encrypt |
+
+## Key Links
+
+- **Live:** [ernestofgaia.xyz](https://ernestofgaia.xyz)
+- **Mobile subdomain:** [mobile.ernestofgaia.xyz](https://mobile.ernestofgaia.xyz)
+- **MVP (deprecated):** [mvp.ernestofgaia.xyz](https://mvp.ernestofgaia.xyz)
+
+## Next Steps
+- Complete chat UX warm acknowledgment responses
+- Optimize images for mobile (librarian character, background photo)
+- Finalize `llms.txt` and JSON-LD structured data
+- Print business cards once site is live and verified
