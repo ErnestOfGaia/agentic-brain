@@ -22,4 +22,4 @@ Recent technical work includes building and deploying a live AI agent website (e
 
 Ernest is open to consulting engagements, contract work, speaking engagements, on-site workshops, and strategic partnerships. He is not seeking full-time employment but is always open to the right conversation. He serves clients in the Pacific City to Portland Metro corridor and beyond, with remote availability.
 
-Serious inquiries: eog@ErnestOfGaia.xyz — Ernest responds within 24 hours.
+Serious inquiries: eog@ErnestOfGaia.xyz — Ernest responds within 48 hours.

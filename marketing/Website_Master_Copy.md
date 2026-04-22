@@ -274,7 +274,7 @@ The hardest part is starting. A free 30-minute call is completely low-pressure â
 **[Text to Start a Free Call]**  
 [503-664-0546 as clickable phone button â€” opens user's text message app]
 
-Send: "AI coaching" and I'll follow up within 24 hours.
+Send: "AI coaching" and I'll follow up within 48 hours.
 
 **Prefer email?**  
 [eog@ernestofgaia.xyz](mailto:eog@ernestofgaia.xyz)
