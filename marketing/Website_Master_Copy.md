@@ -11,7 +11,9 @@ last-tagged: 2026-04-15
 ---
 
 # Ernest Of Gaia — Website Master Copy
-**Version 1.0** | Last updated: 2026-04-15
+**Version 1.1** | Last updated: 2026-07-18
+
+> **Note:** The live site (ernestofgaia.xyz, now organized as the Begin Learning "eogbook") is canonical. Facts below were reconciled to the live site on 2026-07-18 — tier names, plans, and giveback scope are current; the section layout is the original draft structure and may not match the live page order.
 
 
 ---
@@ -86,7 +88,7 @@ Claude.ai, ChatGPT, Google Gemini, basic Notion AI
 
 ---
 
-### TIER 2: The Workshop — AI Builder
+### TIER 2: The Builder
 **Build real workflows. Make AI core to how you work.**
 
 **Format:** In-person or online · **Duration:** 75 minutes · **Cost:** $110 per session · ⭐ **Most popular**
@@ -108,21 +110,17 @@ Claude.ai Pro, ChatGPT Plus, Perplexity, Notion, Make.com (intro automation), Go
 
 ---
 
-### TIER 3: Masterclass — AI Architect
-*(Currently available by special inquiry only — see note below)*
+### LAST MILE WEBSITE DEVELOPMENT
+**A finishing service for websites that are 80–90% done.**
 
-**Format:** In-person or online · **Duration:** 90 minutes · **Cost:** $165 per session
+**Format:** Free audit first · **Cost:** Flat quote · No lock-in · For Oregon small businesses
 
-**What's included:**
-- Full AI operations strategy for your entire business
-- Multi-step automation and agentic workflows
-- Claude API orientation (no coding required)
-- Rollout planning and team training
-- ROI measurement frameworks
+**What it covers:**
+- Broken forms, placeholder copy, missing SEO, mobile bugs
+- A free audit of the site, then a flat quote for the punch list
+- The site handed back finished
 
-**Best for:** Founders, operations leads, and business owners embedding AI across entire departments or teams.
-
-**Note:** This tier is available after you've completed foundational work in Tier 1 or 2. We'll determine together whether this is the right fit for your goals.
+*(There is no Tier 3 — the coaching ladder is Tier 0 → Tier 1 → Tier 2, with Last Mile as a standalone development service.)*
 
 ---
 
@@ -133,14 +131,14 @@ Once you decide on a tier, you can book sessions as you go, or lock in a plan an
 | Plan | Duration | Sessions | Frequency | Savings | Bonus |
 |------|----------|----------|-----------|---------|-------|
 | **Pay as you go** | Flexible | 1–2 | Whenever | None | None |
-| **Launch Plan** | 3 months | 12 | 1 per week | None | 1 free nonprofit session |
-| **Growth Plan** | 6 months | 24 | 1 per week | 5% off | 2 free nonprofit sessions |
-| **Transformation Plan** | 9 months | 36 | 1 per week | 10% off | 3 free nonprofit sessions |
+| **Habit Plan** | 3 months | 12 | Typically weekly | None | 1 free nonprofit session |
+| **Rhythm Plan** | 6 months | 24 | Typically weekly | 5% off | 2 free nonprofit sessions |
+| **Craft Plan** | 9 months | 36 | Typically weekly | 10% off | 3 free nonprofit sessions |
 
 **What these plans cost per month (approx.):**
 
 **Foundations tier:** $300–$405/month  
-**Workshop tier:** $415–$577/month
+**The Builder tier:** $415–$577/month
 
 ---
 
@@ -162,8 +160,8 @@ Text [503-664-0546 as clickable button] with "AI coaching" and we'll set up a ti
 #### STEP 2: Choose Your Tier
 Based on what you shared in the handshake call, we'll agree on the right tier for you:
 - **Tier 1 (Foundations)** if you're brand new to AI
-- **Tier 2 (The Workshop)** if you want to build workflows and integrate AI into your business
-- **Tier 3 (Masterclass)** if you're ready for company-wide AI strategy *(by arrangement)*
+- **Tier 2 (The Builder)** if you want to build workflows and integrate AI into your business
+- **Last Mile Website Development** if your website just needs finishing, not coaching
 
 No pressure to commit to a plan upfront. Most people start with a single session to see how we work together.
 
@@ -215,7 +213,7 @@ By 6 months, depending on your tier and goals:
 | You figure it out alone | Passive (you watch) | Active (you do it) |
 | No accountability | No follow-up | Ongoing relationship, homework, recap docs |
 | Generic examples | Generic examples | Your actual device, your actual problems |
-| Cost: $0–$500 one-time | Cost: $25–$100 per session | Cost: $75–$165 per session, results-driven |
+| Cost: $0–$500 one-time | Cost: $25–$100 per session | Cost: $75–$110 per session, results-driven |
 
 ---
 
@@ -225,25 +223,26 @@ By 6 months, depending on your tier and goals:
 **Your Investment Supports Your Community**
 
 ### Program Overview
-When you invest in coaching, you invest in your community too. For every 12 hours of paid coaching (12 sessions at Tier 1, 8 sessions at Tier 2, or 7 sessions at Tier 3), I donate one complimentary AI coaching session to a local Oregon nonprofit of your choice.
+When you invest in coaching, you invest in your community too. For every 12 hours of paid coaching (12 sessions at Tier 1, or about 10 at Tier 2), I donate one complimentary AI coaching session to a nonprofit of your choice — in person or online, not limited to Oregon.
 
-It's a small way of keeping AI literacy accessible across our region.
+It's a small way of keeping AI literacy accessible.
 
 ---
 
 ### How It Works
 
 1. **You complete 12 hours of paid coaching** with me in any tier.
-2. **You nominate a nonprofit** — a school, library, community action agency, food bank, or tribal organization in your county.
-3. **I reach out and schedule** a free session with them — either with a staff member or a team.
+2. **You nominate a nonprofit** — a school, library, community action agency, food bank, or tribal organization, anywhere.
+3. **I reach out and schedule** a free session with them — in person or online, with a staff member or a team.
 4. **They learn practical AI.** The session covers AI basics, one real workflow, and a resource list they can use.
 5. **Optional:** You can attend as a mentor, which deepens your own learning too.
+6. **No nonprofit in mind?** Your hours can roll into my volunteer work with Team Rubicon (teamrubiconusa.org), where I've been a Grey Shirt for about a decade.
 
 ---
 
 ### Who We Donate To
-Eligible organizations include:
-- Local 501(c)(3) nonprofits
+Eligible organizations include (not limited to Oregon):
+- 501(c)(3) nonprofits
 - Oregon schools and school districts
 - Community action agencies
 - Libraries and co-ops
@@ -315,7 +314,7 @@ Most people notice a shift by their 3rd session — they're more comfortable, as
 Book single sessions as you go. No commitment. Most people start with 1–2 sessions to see how we work together, then decide if a plan makes sense.
 
 #### "How does the nonprofit giveback actually work?"
-Simple: after you complete 12 hours of paid coaching (any tier), you pick a nonprofit you care about. I contact them, schedule a free coaching session, and you can even sit in if you want. It's a way of spreading AI literacy in Oregon.
+Simple: after you complete 12 hours of paid coaching (any tier), you pick a nonprofit you care about. I contact them, schedule a free coaching session — in person or online — and you can even sit in if you want. No nonprofit in mind? Your hours can roll into my volunteer work with Team Rubicon, where I've been a Grey Shirt for about a decade.
 
 #### "Will AI take my job?"
 That's a fair question, and one we'll discuss directly. Part of good coaching is honest risk awareness. AI is a tool, and like any tool, it changes what we do. The goal is to help you stay ahead of that change.

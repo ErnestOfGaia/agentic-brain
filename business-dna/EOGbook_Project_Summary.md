@@ -17,7 +17,9 @@ last-tagged: 2026-04-15
 **Created:** 2026-04-15  
 **Project:** EOGbook gitbook-style information architecture  
 **Owner:** Ernest Of Gaia  
-**Status:** Ready for Cowork execution  
+**Status:** Executed — live on ernestofgaia.xyz as the Begin Learning book (`/begin-learning`)  
+
+> **Note (2026-07-18):** This is the original planning document. The built site is canonical. Notable differences from this plan: routes live under `/begin-learning`, and there is **no Tier 3** — services are Tier 0 (Free Handshake), Tier 1 (Foundations), Tier 2 (The Builder), plus Last Mile Website Development (`/begin-learning/services/last-mile`). Plans are Pay-as-you-go, Habit, Rhythm, and Craft.
 
 ---
 
@@ -40,7 +42,7 @@ A minimalist, gitbook-style navigation system for Ernest Of Gaia's website that:
 | **Home** | Directory of all services | 7 linked page tiles, hero tagline | — |
 | **1. Who is Ernest** | Personal background + approach | Origin story, philosophy | 2 detail pages |
 | **2. What I Do** | AI coaching methodology | Plain English, lifelong learning | 2 detail pages |
-| **3. Services** | All 3 tiers + pricing | Tier 1, 2, 3 descriptions, plans table | 5 detail pages |
+| **3. Services** | All tiers + pricing | Tier 0, 1, 2 + Last Mile descriptions, plans table | 5 detail pages |
 | **4. How It Works** | 5-step coaching journey | Steps 1–5, comparison table | 4 detail pages |
 | **5. Nonprofit Giveback** | Community impact program | Program overview, mechanics | 2 detail pages |
 | **6. Trust & FAQs** | Testimonials + objection handling | 3–5 client quotes, 8 FAQs | — |
@@ -126,7 +128,7 @@ A minimalist, gitbook-style navigation system for Ernest Of Gaia's website that:
 ├── /eogbook/services
 │   ├── /eogbook/services/tier-1
 │   ├── /eogbook/services/tier-2
-│   ├── /eogbook/services/tier-3
+│   ├── /eogbook/services/last-mile
 │   └── /eogbook/services/plans
 ├── /eogbook/how-it-works
 │   ├── /eogbook/how-it-works/steps-1-2
@@ -155,7 +157,7 @@ A minimalist, gitbook-style navigation system for Ernest Of Gaia's website that:
 | Hero section | Home / Directory | 100–150 |
 | "Who is Ernest" origin | Page 1 + drill-down | 200–300 total |
 | "What I Do" approach | Page 2 + drill-down | 200–300 total |
-| Service tiers (3) | Page 3 + 3 drill-downs | 800–1000 total |
+| Service tiers | Page 3 + drill-downs | 800–1000 total |
 | Plans table | Page 3 drill-down | 100–150 |
 | How It Works (5 steps) | Page 4 + 4 drill-downs | 500–700 total |
 | Comparison table | Page 4 drill-down | 150–200 |
@@ -259,7 +261,7 @@ A minimalist, gitbook-style navigation system for Ernest Of Gaia's website that:
 - Sidebar navigation optional (breadcrumb primary)
 
 ### Desktop (> 1024px)
-- Full 3-tier tier comparison possible (side-by-side)
+- Full tier comparison possible (side-by-side)
 - Whitespace and breathing room
 - Larger typography for better readability
 - Optional hero images or visual elements (keep minimal)

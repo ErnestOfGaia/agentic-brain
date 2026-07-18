@@ -61,15 +61,16 @@ I provide in-person, one-on-one AI coaching and tutoring for individuals, small 
 
 ## 4. Service Tiers
 
-*To be defined. Goal: 3–5 options ranging from one-off consultation to long-term engagement.*
+*Locked — these match the live website (source of truth).*
 
-| Tier | Name | Format | Duration | Price Range | Description |
-|------|------|--------|----------|-------------|-------------|
-| 0 | Free Discovery | Online meeting | 30 min | Free | First contact — assess needs, no commitment |
-| 1 | One-Off Consultation | In-person | 1–2 sessions | _[add]_ | Paid intro — assess devices, tools, actual workflow |
-| 2 | Starter Package | In-person | _[add]_ | _[add]_ | Short-term support — 1 specific tool, focused skill |
-| 3 | Core Coaching | In-person | 3–6 months | _[add]_ | Ongoing engagement — build AI fluency over time |
-| 4 | Full Engagement | In-person | 6–12 months | _[add]_ | Deep learning partnership — multiple tools, full integration |
+| Tier | Name | Format | Duration | Price | Description |
+|------|------|--------|----------|-------|-------------|
+| 0 | Free Handshake Call | Online | 30 min | Free | First contact — assess needs, no commitment |
+| 1 | Foundations — AI Starter | In-person or online | 60 min | $75/session | Beginners — basics, prompts, safety, first habits |
+| 2 | The Builder | In-person or online | 75 min | $110/session | Real workflows, tested before you rely on them |
+| — | Last Mile Website Development | Remote/on-site | Per project | Flat quote after free audit | Finishing service for websites that are 80–90% done |
+
+**Plans:** Pay-as-you-go; Habit (3 months); Rhythm (6 months, 5% off); Craft (9 months, 10% off). There is no Tier 3.
 
 **Pricing philosophy:** Priced like a tradesperson or private tutor — local, relationship-based, tiered by tool complexity and time commitment. A client learning one tool (e.g., Claude Desktop) should have a lower-cost path than someone learning and testing multiple cloud + local AI tools.
 

@@ -39,16 +39,17 @@ By the end of the session, you'll have a clear picture of where you're starting 
 ## Service Tiers
 (todo = 
 rename session names to popular oregon native birds,
-need to factor in travel costs - for anyone over an hour away I may defer travel costs if an online meetings is done first
-add a free tier Online Handshake Session 30 mins best for folks that like handshakes and eye contact )
+need to factor in travel costs - for anyone over an hour away I may defer travel costs if an online meetings is done first )
 
-| Tier            | Session Name                   | Length     | Rate               | Best For                                           |
-| --------------- | ------------------------------ | ---------- | ------------------ | -------------------------------------------------- |
-| **Basic**       | Foundations — AI Starter       | 60 min     | $75 / session      | Beginners with little or no AI experience          |
-| **Standard**    | The Workshop — AI Builder      | 75 min     | $110 / session     | Small business owners building AI workflows        |
-| ==~~**Premium**~~== | ==~~Masterclass — AI Architect~~== | ==~~90 min~~== | ==~~$165 / session~~== | ==~~Advanced users and Portland-area professionals~~== |
+| Tier       | Session Name             | Length | Rate           | Best For                                    |
+| ---------- | ------------------------ | ------ | -------------- | ------------------------------------------- |
+| **Tier 0** | Free Handshake Call      | 30 min | Free           | Getting to know each other, no commitment   |
+| **Tier 1** | Foundations — AI Starter | 60 min | $75 / session  | Beginners with little or no AI experience   |
+| **Tier 2** | The Builder              | 75 min | $110 / session | Small business owners building AI workflows |
 
 Not sure which tier fits? We'll figure it out together in your first conversation — no commitment required upfront.
+
+*Also available: **Last Mile Website Development** — a finishing service for websites that are 80–90% done. Free audit, flat quote, no lock-in.*
 
 ---
 
@@ -67,7 +68,7 @@ Use this checklist to get the most out of our time together:
 
 ## The Giveback Program
 
-When you invest in coaching, you invest in your community too. For every 12 hours of paid coaching completed, I donate one complimentary session to a local Oregon nonprofit of your choosing — a school, library, community action agency, or tribal organization. It's a small way of keeping AI literacy accessible across our region. You have to arrange the meeting or delegate the time to a list of groups i already help (coming eventually). 
+When you invest in coaching, you invest in your community too. For every 12 hours of paid coaching completed, I donate one complimentary session to a nonprofit of your choosing — a school, library, community action agency, or tribal organization — in person or online, and not limited to Oregon. You pick the nonprofit; I reach out and set up the session, and you're welcome to sit in. No nonprofit in mind? Your hours can roll into my volunteer work with Team Rubicon, where I've been a Grey Shirt for about a decade. It's a small way of keeping AI literacy accessible.
 
 ---
 
@@ -75,15 +76,17 @@ When you invest in coaching, you invest in your community too. For every 12 hour
 
 Have a question before your session? Reach out anytime.
 
-|                  |                          |
-| ---------------- | ------------------------ |
-| **Phone**        | +1 (503) 664-0546        |
-| **Email**        | eog@ernestofgaia.xyz     |
-| **Website**      | ernestofgaia.xyz         |
-| Work History     | resume.ernestofgaia.xyz  |
-| Projects Orchard | orchard.ernestofgaia.xyz |
+|                      |                          |
+| -------------------- | ------------------------ |
+| **Text (preferred)** | +1 (503) 664-0546        |
+| **Email**            | eog@ernestofgaia.xyz     |
+| **Website**          | ernestofgaia.xyz         |
+| Work History         | resume.ernestofgaia.xyz  |
+| Projects Orchard     | orchard.ernestofgaia.xyz |
 
-*Service area: Pacific City to Portland Metro, Oregon*
+Text first — 503-664-0546 doesn't take voicemail. I respond within 48 hours.
+
+*Service area: Pacific City to Portland, Oregon & the I-5 Corridor — online coaching available anywhere.*
 
 ---
 
