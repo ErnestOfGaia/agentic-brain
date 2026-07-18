@@ -17,6 +17,8 @@ last-tagged: 2026-04-15
 
 *Started: March 30, 2026 · Target: 6 weeks · Status: Week 2, Ready for Refocus*
 
+> **Historical document** — this sprint is complete. ernestofgaia.xyz is live in production; current services, pricing, and plans live on the website, which is the source of truth.
+
 ---
 
 ## 1. Mission & Context

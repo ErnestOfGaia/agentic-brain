@@ -18,18 +18,14 @@ todo: |-
   need to factor in travel costs - for anyone over an hour away I may defer travel costs if an online meetings is done first
   need to update session names with plant or animal species (native to oregon) names, 
   need to estimate approximate travel times per region in Regional Notes:,
-  need to hide Tier 3 option on website and focus on the 1st and second tier until I have certifications in Gemini and Claud Architecture.
-  add a free tier Online Handshake Session 30 mins best for folks that like handshakes and eye contact
-  possibly instead of the Tier 2 Plan being called the Workshop, change to Building Blocks 
-  it is time for a very good through review of the site details and experience
   need to update the home page to reflect more of a pitch to open the eogbook, send a text message, or chat with an agent.
 ---
 
 # AI Coaching & Tutoring Business — Pricing Tiers & Plans
 
-> **Business model:** 1-on-1 personalized AI coaching sessions, structured across three tiers. Oregon-market pricing calibrated to Astoria/Coast, Salem, and Portland demographics. For every 12 hours of paid coaching completed, one complimentary session is donated to a local nonprofit of the client's choice.
+> **Business model:** 1-on-1 personalized AI coaching sessions — a free Tier 0 Handshake Call, two paid tiers, and a Last Mile Website Development service. Oregon-market pricing calibrated to Astoria/Coast, Salem, and Portland demographics. For every 12 hours of paid coaching completed, one complimentary session is donated to a nonprofit of the client's choice (in person or online, not limited to Oregon).
 
-**Last updated:** 2026-03-31
+**Last updated:** 2026-07-18
 **Tags:** #ai-coaching #pricing #business #oregon #claude-projects
 
 ---
@@ -40,7 +36,7 @@ todo: |-
 |---|---|
 | Oregon median household income (2024) | $83,011 — above national avg of $80,734 |
 | Portland / West Coast AI consulting rates | $150–$400/hr (agency/enterprise) |
-| Your coaching rates | $75–$165/session (accessible, personal) |
+| Your coaching rates | $75–$110/session (accessible, personal) |
 | Small biz AI spend growth (2025) | ~36% YoY increase nationally |
 | Oregon unemployment rate (2024) | 3.9% (white), 5.5% (Black), 5.2% (Hispanic/Latino) |
 
@@ -48,6 +44,14 @@ todo: |-
 - **Astoria / Oregon Coast** — Small tourism, fishing, retail, and hospitality businesses. Price-sensitive, community-oriented. Oregon Coast SBDC has run AI workshops at $25/2hr group session — your 1-on-1 coaching must feel meaningfully more personal and transformational.
 - **Salem** — Government, healthcare, logistics, mid-size service businesses. Mid-range budgets, strong appetite for workflow efficiency.
 - **Portland metro** — Tech-forward, creative agencies, professional services, nonprofits, startups. Most competitive market; clients compare against agency retainers.
+
+---
+
+## Tier 0 — Free Handshake Call
+
+**Rate:** Free · 30 minutes · Online · No commitment
+
+A get-to-know-you call before any money changes hands. We talk through your goals, your current skill level, and what you're trying to accomplish — and Ernest recommends the tier that fits best. Book by texting "AI coaching" to 503-664-0546, emailing eog@ernestofgaia.xyz, or scheduling a discovery call through the site.
 
 ---
 
@@ -94,7 +98,7 @@ response. Client name: [NAME]. Business type: [TYPE]. Session number: [N].
 
 ---
 
-## Tier 2 — The Workshop (AI Builder)
+## Tier 2 — The Builder
 
 **Rate:** $110/session · 75 minutes · Best fit: Salem / Portland metro · ⭐ Most popular
 
@@ -129,9 +133,9 @@ Creators, marketers, consultants, and small business owners who know the basics 
 | LinkedIn Learning — Claude | https://www.linkedin.com/learning/topics/claude | Multiple courses, build AI budget tracker etc. |
 | Pluralsight — Claude 3 path | https://www.pluralsight.com/paths/anthropic-claude-3 | Deployment, admin, multimodal |
 
-### Claude Project setup — Workshop
+### Claude Project setup — The Builder
 ```
-Project name: Workshop Clients — [Client Name]
+Project name: Builder Clients — [Client Name]
 System prompt: You are a strategic AI workflow coach. The client is building 
 custom AI systems for their business. Maintain the client's brand voice 
 [BRAND VOICE DOC]. Reference the prompt library we've built together. 
@@ -142,139 +146,90 @@ Attached: brand_voice.md, prompt_library.md
 
 ---
 
-## Tier 3 — Masterclass (AI Architect)
+## Last Mile Website Development
 
-(need to hide Tier 3 option on website and focus on the 1st and 2nd tier until I have certifications in Gemini and Claud Architecture.)
+**Rate:** Flat quote after a free audit · No lock-in · For Oregon small businesses
 
-**Rate:** $165/session · 90 minutes · Best fit: Portland / enterprise clients
+A finishing service for websites that are 80–90% done — broken forms, placeholder copy, missing SEO, mobile bugs. Ernest audits the site for free, quotes a flat price for the punch list, and hands the site back finished. Details: https://ernestofgaia.xyz/begin-learning/services/last-mile
 
-### Who this is for
-Visionaries, operations leads, founders, and agency owners who want AI embedded across their entire business — not just individual tasks. May involve teams.
-
-### What's included per session
-- Agentic workflow design and multi-step automation architecture
-- Claude API orientation (no coding required — conceptual mastery)
-- MCP (Model Context Protocol) basics — connecting Claude to external tools
-- AI ops strategy: which tools, which teams, what rollout order
-- Custom Claude Project architecture per department or function
-- ROI measurement frameworks — time saved, output quality, cost reduction
-- Full workflow specification document delivered after each session
-- Implementation roadmap (30/60/90 day)
-
-### Tools covered
-- Claude API (via Console — anthropic.com/console)
-- Claude Code (command line AI assistant)
-- MCP servers and integrations
-- n8n or Make.com (advanced automation)
-- Perplexity, Notion, Slack AI integrations
-- Custom GPT/Claude Project architecture design
-
-### Learning resources to assign clients
-
-| Resource | URL | Notes |
-|---|---|---|
-| Anthropic Academy — Advanced MCP | https://anthropic.skilljar.com/ | Production MCP patterns, sampling, notifications |
-| Anthropic API fundamentals (GitHub) | https://github.com/anthropics/courses | SDK, multimodal prompts, streaming |
-| Pluralsight — Claude 3 learning path | https://www.pluralsight.com/paths/anthropic-claude-3 | Full deployment & admin path |
-| Claude for Business | https://claude.com/solutions/education | Enterprise use cases |
-| Anthropic Higher Ed initiatives | https://www.anthropic.com/news/anthropic-higher-education-initiatives | Advisory board, AI Fluency frameworks |
-| Claude Code in Action | https://www.coursera.org/learn/claude-code-in-action | Hooks, external integrations, workflows |
-
-### Claude Project setup — Masterclass
-```
-Project name: Masterclass — [Client Name] — [Department/Function]
-System prompt: You are a senior AI systems advisor. The client is designing 
-enterprise-grade AI workflows. Reference their implementation roadmap 
-[ROADMAP DOC]. Maintain technical precision. Flag risks and dependencies. 
-Suggest MCP integrations where appropriate. Think in systems, not tasks.
-Business: [NAME]. Industry: [INDUSTRY]. Team size: [N]. Stack: [TOOLS].
-Attached: roadmap.md, api_notes.md, org_chart.md
-```
+> There is no Tier 3. The coaching ladder is Tier 0 (Free Handshake) → Tier 1 (Foundations) → Tier 2 (The Builder), plus Last Mile as a standalone development service.
 
 ---
 
-## Coaching Plans — 3, 6, and 9 Months
+## Coaching Plans — Pay-as-you-go, or 3, 6, and 9 Months
+
+Pay-as-you-go is always available: book single sessions with no commitment. The named plans below trade commitment for rhythm (typically weekly sessions) and a discount.
 
 ### Plan comparison
 
 | Plan | Duration | Sessions | Frequency | Discount | Nonprofit sessions earned |
 |---|---|---|---|---|---|
-| Launch | 3 months | 12 | 1/week | None | 1 |
-| Growth | 6 months | 24 | 1/week | 5% | 2 |
-| Transformation | 9 months | 36 | 1/week | 10% | 3 |
+| Pay-as-you-go | — | As booked | Flexible | None | Hours still count |
+| Habit | 3 months | 12 | Typically weekly | None | 1 |
+| Rhythm | 6 months | 24 | Typically weekly | 5% | 2 |
+| Craft | 9 months | 36 | Typically weekly | 10% | 3 |
 
 ---
 
-### Launch Plan — 3 Months
+### Habit Plan — 3 Months
 
 **Best for:** Clients wanting quick, measurable wins. Testing AI before committing long-term.
 
 | Tier | Sessions | Rate | Total |
 |---|---|---|---|
 | Foundations | 12 | $75 | **$900** |
-| Workshop | 12 | $110 | **$1,320** |
-| Masterclass | 12 | $165 | **$1,980** |
-
-**Monthly cost range:** $300 – $660/month
+| The Builder | 12 | $110 | **$1,320** |
 
 **What clients achieve in 3 months:**
 - Foundations: Comfortable with Claude and ChatGPT, first custom prompts written, basic content workflow running
-- Workshop: Prompt library built, 2–3 recurring workflows automated, Claude Project configured for their business
-- Masterclass: AI ops strategy documented, 1 department fully onboarded, ROI baseline established
+- The Builder: Prompt library built, 2–3 recurring workflows automated, Claude Project configured for their business
 
 ---
 
-### Growth Plan — 6 Months ⭐ Recommended
+### Rhythm Plan — 6 Months ⭐ Recommended
 
 **Best for:** Serious business transformation. Enough time to build, test, and refine real systems. 5% discount applied.
 
 | Tier | Sessions | Rate (after 5% off) | Total |
 |---|---|---|---|
 | Foundations | 24 | $71.25 | **$1,710** |
-| Workshop | 24 | $104.50 | **$2,508** |
-| Masterclass | 24 | $156.75 | **$3,762** |
-
-**Monthly cost range:** $285 – $627/month
+| The Builder | 24 | $104.50 | **$2,508** |
 
 **What clients achieve in 6 months:**
 - Foundations: Full AI toolkit in daily use, training 1–2 staff members, content workflow producing consistently
-- Workshop: Full content pipeline live, Notion/Google Workspace integrated, custom GPT or Claude Project serving multiple business functions
-- Masterclass: AI embedded in 2–3 departments, automation saving measurable hours/week, team trained and self-sufficient
+- The Builder: Full content pipeline live, Notion/Google Workspace integrated, custom GPT or Claude Project serving multiple business functions
 
 ---
 
-### Transformation Plan — 9 Months
+### Craft Plan — 9 Months
 
 **Best for:** Full business-wide AI integration. Nonprofit giveback maximized (3 sessions). 10% discount applied.
 
 | Tier | Sessions | Rate (after 10% off) | Total |
 |---|---|---|---|
 | Foundations | 36 | $67.50 | **$2,430** |
-| Workshop | 36 | $99 | **$3,564** |
-| Masterclass | 36 | $148.50 | **$5,346** |
-
-**Monthly cost range:** $270 – $594/month
+| The Builder | 36 | $99 | **$3,564** |
 
 **What clients achieve in 9 months:**
-- Foundations: AI-confident, independently building new workflows, potential upgrade to Workshop tier
-- Workshop: Agency-grade prompt library, team AI policy written, training colleagues independently
-- Masterclass: AI ops fully institutionalized, API integrations live, measurable cost savings documented, positioned as AI-forward business in their market
+- Foundations: AI-confident, independently building new workflows, potential upgrade to The Builder tier
+- The Builder: Agency-grade prompt library, team AI policy written, training colleagues independently
 
 ---
 
 ## Nonprofit Giveback Program
 
-> For every **12 hours of paid coaching** completed, the coach donates **1 complimentary session** to a local Oregon nonprofit of the client's choice.
+> For every **12 hours of paid coaching** completed, the coach donates **1 complimentary session** to a nonprofit of the client's choice — in person or online, not limited to Oregon.
 
 ### How it works
-1. Client completes 12 sessions (any tier)
-2. Client nominates a local Oregon nonprofit
-3. Coach contacts the nonprofit to schedule a free session
+1. Client completes 12 hours of paid coaching (any tier)
+2. Client nominates a nonprofit of their choice
+3. Coach contacts the nonprofit to schedule a free session — in person or online
 4. Session covers: AI basics, one practical workflow, and a resource list
 5. Optional: client co-attends as a mentor (great for their own learning)
+6. No nonprofit in mind? The client's hours can roll into Ernest's volunteer work with Team Rubicon (https://teamrubiconusa.org/), where they've been a Grey Shirt for about a decade.
 
 ### Eligible organization types
-- 501(c)(3) nonprofits in the client's county or region
+- 501(c)(3) nonprofits anywhere — the client's county or region is a natural starting point, but the program is not limited to Oregon
 - Oregon Food Bank chapters
 - Schools and school districts (Salem-Keizer, Astoria, Portland Public)
 - Community action agencies (Clatsop Community Action, etc.)
@@ -295,8 +250,7 @@ Attached: roadmap.md, api_notes.md, org_chart.md
 | Project | Clients | System prompt focus |
 |---|---|---|
 | Foundations Clients | Beginners across all markets | Plain language, safety, habit-building |
-| Workshop Clients | Creators and builders | Brand voice, workflows, prompt library |
-| Masterclass Clients | Architects and operators | Strategy, API, ROI, team rollout |
+| Builder Clients | Creators and builders | Brand voice, workflows, prompt library |
 
 ### Option B — Per-client Projects (recommended once you have 5+ active clients)
 
@@ -310,8 +264,7 @@ Each client gets their own Project with:
 ### Naming convention
 ```
 [TIER] — [Client First Name] — [Business Type]
-e.g. "Workshop — Maria — Coastal Bakery"
-     "Masterclass — Dev — Portland Agency"
+e.g. "Builder — Maria — Coastal Bakery"
      "Foundations — Sam — Astoria Retail"
 ```
 
