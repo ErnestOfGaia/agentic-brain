@@ -16,13 +16,12 @@ This document combines and simplifies the major information found across the pro
 ## Contact Information
 
 **Ernest Rando** *(they/them)*  
-Pacific City, Oregon, USA / Neskowin, Oregon area  
-Phone: 1-541-291-2304  
-Email: lotusfuugle@gmail.com  
-Also used in older materials: lotusdog@hotmail.com  
+Pacific City, Oregon, USA  
+Phone: 503-664-0546 (text preferred)  
+Email: eog@ernestofgaia.xyz  
 YouTube: @ErnestOfGaia  
-Discord: ernest_of_gaia / ernest_of_gaia#5363  
-Twitter/X: Lotusdog  
+Discord: ernest_of_gaia  
+Twitter/X: @ErnestOfGaia  
 
 ## Professional Summary
 
@@ -284,8 +283,8 @@ Ernest Rando is a hospitality worker, educator, organizer, and systems-minded pr
 
 **Ernest Rando**  
 Pacific City, Oregon, USA  
-1-541-291-2304  
-lotusfuugle@gmail.com  
+503-664-0546 (text preferred)  
+eog@ernestofgaia.xyz  
 YouTube: @ErnestOfGaia  
 Discord: ernest_of_gaia
 
