@@ -183,9 +183,8 @@ This distinguishes the service from "AI hype" content and builds long-term trust
 
 ## 8. Business Operations
 
-**Primary email:** lotusfuugle@gmail.com (personal) → migrate to eog@ernestofgaia.xyz
-**Google Drive:** https://drive.google.com/drive/folders/1toLzE4euKcg_cSH-H0UKNWKrtmoD56pz
-**Obsidian vault:** Connected to Claude via `.claude` folder — this vault is the business brain
+**Primary email:** eog@ernestofgaia.xyz
+**Obsidian vault:** Connected to Claude — this vault is the business brain
 **Invoicing:** _[add — tool/process]_
 **Contracts:** _[add — template/tool]_
 **Scheduling:** _[add — booking tool or process]_
