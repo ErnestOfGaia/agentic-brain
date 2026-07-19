@@ -1,0 +1,22 @@
+name: Content Guard
+
+# This knowledge base is public AND is served verbatim by the ernestofgaia.xyz
+# chat agents. Fail any PR/push that reintroduces private contact data (a phone
+# number other than the public 503-664-0546, a personal email, an internal
+# Drive/Docs link) or he/him for Ernest (who uses they/them).
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  content-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Scan knowledge base
+        run: node scripts/content-guard.mjs
