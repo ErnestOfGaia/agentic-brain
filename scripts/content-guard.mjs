@@ -39,6 +39,39 @@ const PERSONAL_EMAIL  = /\b[a-z0-9._%+-]+@(?:gmail|hotmail|yahoo|outlook|live|ms
 const GOOGLE_DOC_URL  = /https?:\/\/(?:drive|docs)\.google\.com\/[^\s)"']+/gi;
 const ERNEST_HE       = /\b(?:he|him|his|himself)\b/gi;
 
+// ─── Added 2026-07-29 — the class this guard was missing ────────────────────
+// Ernest has NO PAYING CLIENTS YET. Any sentence implying a client base, an
+// observed outcome, or a popularity ranking is unverifiable, and the agents
+// serve this file verbatim to prospects. Eight such claims survived the
+// 2026-07-06 website sweep *inside this repo* because the sweep covered the
+// website, and this is a mirror of the website. Found 2026-07-28.
+//
+// The worst was not a label but a schedule: "Most people notice a shift by
+// their 3rd session — by 6 sessions, workflows are running. By 12, AI is part
+// of their daily toolkit." A visitor asking "how long until this works?" could
+// be handed that verbatim.
+const TRACK_RECORD    = /\bmost\s+(?:people|clients|students|customers)\b|\bmost\s+popular\b|\bclients\s+(?:often|usually|typically|tend\s+to|love|say)\b|\bby\s+(?:their|your)\s+\d+(?:st|nd|rd|th)\s+session\b|\bby\s+\d+\s+sessions\b|\bbest[-\s]?seller\b/gi;
+
+// Invented metrics written as finished claims. Deliberately narrow: requires
+// an explicit "N+ clients", a percentage OF a client group, or an "average …: N%"
+// construction. "once you have 3–5 clients" is a planning note and must NOT fire.
+const FABRICATED_STAT = /\b\d+\+\s*clients\b|\b\d{1,3}\s?%\s+of\s+(?:clients|students|customers|people)\b|\baverage\b[^.\n]{0,40}:\s*\d{1,3}\s?%/gi;
+
+// Copy scaffolding has no business in a retrieval corpus: a chunk can be
+// retrieved without its "(PLACEHOLDER)" heading attached.
+//
+// ⚠️ NARROWED on first run, 2026-07-29 — the first version matched the bare word
+// PLACEHOLDER and bracket tokens like [Client Name], and fired on SEVEN pieces of
+// legitimate content. "Placeholder" is domain vocabulary here: the Last Mile
+// service exists to fix "broken forms, placeholder copy, missing SEO", and the
+// Claude Project setup blocks use [Client Name] / [TIER] as real naming
+// conventions. A rule that fires on true content is evidence about the RULE.
+//
+// So this targets the actual hazard instead: a placeholder presented AS COPY —
+// a bracketed token inside quotation marks (a fake testimonial), an explicit
+// "(To Add)" list, or a "Testimonial N Placeholder" heading.
+const SCAFFOLDING     = /["“]\s*\[[^\]]{5,}\]|\(To Add\)|Testimonial\s+\d+\s+Placeholder|\bLorem ipsum\b/gi;
+
 function walk(dir) {
   const out = [];
   for (const name of readdirSync(dir)) {
@@ -82,8 +115,21 @@ for (const file of walk(ROOT)) {
       flag(file, lineNo, line, 'he-him-pronoun',
            'Ernest uses they/them — remove he/him/his');
     }
+    if (TRACK_RECORD.test(line)) {
+      flag(file, lineNo, line, 'implied-track-record',
+           'implies a client base or observed outcome — there are no paying clients yet; describe the offer instead');
+    }
+    if (FABRICATED_STAT.test(line)) {
+      flag(file, lineNo, line, 'fabricated-metric',
+           'a statistic about clients that cannot be true yet — remove it, do not soften it');
+    }
+    if (SCAFFOLDING.test(line)) {
+      flag(file, lineNo, line, 'placeholder-scaffolding',
+           'draft scaffolding in a retrieval corpus — a chunk can be served without its heading; keep placeholders in the vault');
+    }
     // Reset lastIndex on the reused /g-with-.test() regexes.
     PERSONAL_EMAIL.lastIndex = GOOGLE_DOC_URL.lastIndex = ERNEST_HE.lastIndex = 0;
+    TRACK_RECORD.lastIndex = FABRICATED_STAT.lastIndex = SCAFFOLDING.lastIndex = 0;
   });
 }
 
