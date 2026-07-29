@@ -91,7 +91,7 @@ Claude.ai, ChatGPT, Google Gemini, basic Notion AI
 ### TIER 2: The Builder
 **Build real workflows. Make AI core to how you work.**
 
-**Format:** In-person or online · **Duration:** 75 minutes · **Cost:** $110 per session · ⭐ **Most popular**
+**Format:** In-person or online · **Duration:** 75 minutes · **Cost:** $110 per session
 
 **What you'll build:**
 - Custom prompts written specifically for your business and brand voice
@@ -128,17 +128,30 @@ Claude.ai Pro, ChatGPT Plus, Perplexity, Notion, Make.com (intro automation), Go
 
 Once you decide on a tier, you can book sessions as you go, or lock in a plan and save:
 
-| Plan | Duration | Sessions | Frequency | Savings | Bonus |
-|------|----------|----------|-----------|---------|-------|
-| **Pay as you go** | Flexible | 1–2 | Whenever | None | None |
-| **Habit Plan** | 3 months | 12 | Typically weekly | None | 1 free nonprofit session |
-| **Rhythm Plan** | 6 months | 24 | Typically weekly | 5% off | 2 free nonprofit sessions |
-| **Craft Plan** | 9 months | 36 | Typically weekly | 10% off | 3 free nonprofit sessions |
+| Plan | Length | Cadence | Savings | Giveback |
+|------|--------|---------|---------|----------|
+| **Pay as you go** | Flexible | You set it | — | Earned every 12 hours |
+| **Habit** | 3 months | Typically weekly | — | 1 nonprofit session |
+| **Rhythm** | 6 months | Typically weekly | 5% off | 2 nonprofit sessions |
+| **Craft** | 9 months | Typically weekly | 10% off | 3 nonprofit sessions |
 
-**What these plans cost per month (approx.):**
+Cadence is set together at the free call — weekly is typical, but the right rhythm is the one you'll
+actually keep. Start pay-as-you-go and move to a plan whenever you like.
 
-**Foundations tier:** $300–$405/month  
-**The Builder tier:** $415–$577/month
+> [!warning] Session counts and monthly cost estimates removed 2026-07-29 — they are NOT published.
+> This table used to carry a **Sessions** column (12 / 24 / 36) and a *"What these plans cost per month
+> (approx.)"* block quoting **$300–$405/month** and **$415–$577/month**. The live site publishes
+> **none** of that: session counts, monthly cost estimates and "most popular" labels were all removed <!-- content-guard: allow -->
+> from the site on 2026-07-06 as unverified claims, and the pricing DNA doc states plainly that the
+> session-count economics are *Ernest's internal planning only — agents must not quote them.*
+>
+> **They were still here, in the corpus the agents actually read.** An agent asked *"what does six
+> months cost?"* could answer **"$415–$577 a month"** — a figure Ernest has never published and is not
+> committed to. That is the "never invent prices" rule broken from the inside: the number is real
+> internal arithmetic, but quoting it to a visitor invents a public price.
+>
+> Published figures only: **$75 / 60 min**, **$110 / 75 min**, **5%** and **10%** plan savings. The
+> table above now matches `/begin-learning/services/plans` exactly.
 
 ---
 
@@ -163,7 +176,7 @@ Based on what you shared in the handshake call, we'll agree on the right tier fo
 - **Tier 2 (The Builder)** if you want to build workflows and integrate AI into your business
 - **Last Mile Website Development** if your website just needs finishing, not coaching
 
-No pressure to commit to a plan upfront. Most people start with a single session to see how we work together.
+No pressure to commit to a plan upfront. You can start with a single session to see how we work together.
 
 ---
 
@@ -308,10 +321,10 @@ That's what the free handshake call is for. We'll talk through your goals, your 
 Yes. I prefer in-person in the Pacific City to Portland corridor, but I offer online coaching too. If you're more than an hour away, we can do your first session online to see if it's a good fit.
 
 #### "How long until I see results?"
-Most people notice a shift by their 3rd session — they're more comfortable, asking better questions, solving actual problems. By 6 sessions, workflows are running. By 12, AI is part of their daily toolkit.
+Faster than you'd expect for confidence; slower than you'd hope for fluency. Comfort and better questions come early. Tested workflows take hold over a couple of months. Within a season, AI is part of your daily toolkit.
 
 #### "What if I don't have time for a full plan?"
-Book single sessions as you go. No commitment. Most people start with 1–2 sessions to see how we work together, then decide if a plan makes sense.
+Book single sessions as you go. No commitment. Start with a session or two to see how we work together, then decide if a plan makes sense.
 
 #### "How does the nonprofit giveback actually work?"
 Simple: after you complete 12 hours of paid coaching (any tier), you pick a nonprofit you care about. I contact them, schedule a free coaching session — in person or online — and you can even sit in if you want. No nonprofit in mind? Your hours can roll into my volunteer work with Team Rubicon, where I've been a Grey Shirt for about a decade.
@@ -321,28 +334,32 @@ That's a fair question, and one we'll discuss directly. Part of good coaching is
 
 ---
 
-## 6. SOCIAL PROOF & TESTIMONIAL SECTIONS (PLACEHOLDERS)
+## 6. SOCIAL PROOF & TESTIMONIALS
 
-### Testimonial 1 Placeholder
-**[CLIENT NAME] | [BUSINESS TYPE/ROLE]**
+**There are none yet, and this knowledge base must not imply otherwise.**
 
-"[3–5 sentence quote about specific result: time saved, workflow built, confidence gained, etc.]"
+> [!warning] Removed 2026-07-29 — copy scaffolding that did not belong in a retrieval corpus.
+> This section held two testimonial templates (`[CLIENT NAME]`, `"[3–5 sentence quote…]"`) and a <!-- content-guard: allow -->
+> "Trust Signals (To Add)" list containing **invented statistics written as finished claims**: <!-- content-guard: allow -->
+> *"15+ clients coached since 2025"*, *"95% of clients complete their first month"*, *"Average session <!-- content-guard: allow -->
+> homework completion: 87%"*.
+>
+> **None of those numbers are real** — Ernest has no paying clients yet. They were drafting placeholders
+> for future copy, and in a document that is only ever read by a human editor they were harmless.
+> **This document is not only read by a human editor.** It is embedded and retrieved by the customer-
+> facing agents, which return passages to real visitors. The `(PLACEHOLDERS)` heading protects them only
+> if the chunker keeps heading context attached to the body text, and the ingest offers no such guarantee.
+> A retrieved fragment reading *"95% of clients complete their first month"* is a fabricated statistic <!-- content-guard: allow -->
+> served to a prospect.
+>
+> **The rule this establishes: a retrieval corpus may not contain planning scaffolding.** Placeholders,
+> draft options, "to add" lists and sample copy all belong in the vault, where the audience is Ernest.
+> Anything in `agentic-brain/` should read as a true statement about the business today, because
+> something will eventually quote it verbatim and without context.
 
----
-
-### Testimonial 2 Placeholder
-**[CLIENT NAME] | [BUSINESS TYPE/ROLE]**
-
-"[3–5 sentence quote emphasizing the personalized, low-pressure nature of coaching.]"
-
----
-
-### Trust Signals (To Add)
-- "15+ clients coached since 2025"
-- "95% of clients complete their first month"
-- "Average session homework completion: 87%"
-- "Serving Pacific City to Portland, Oregon"
-- "Free 30-minute call, no credit card needed"
+Real testimonials go here when real clients exist, and not before. Until then the agents should describe
+the offer and point to the free call — the honest substitute for social proof is specificity, not
+borrowed credibility.
 
 ---
 
@@ -361,7 +378,7 @@ That's a fair question, and one we'll discuss directly. Part of good coaching is
 - **Phone button:** Make [503-664-0546] clickable as `tel:` link so mobile users tap to text/call
 - **Tier comparison:** Consider a side-by-side comparison table for Tier 1 vs. Tier 2
 - **CTA repetition:** Place "Text to start" CTA at least 3 times on homepage (hero, mid-page, footer)
-- **Mobile-first:** Text CTAs should be prominent on mobile since most people browse on phones
+- **Mobile-first:** Text CTAs should be prominent on mobile since most people browse on phones <!-- content-guard: allow -->
 - **Scarcity/urgency:** Not recommended. Your brand is about genuine relationships, not FOMO.
 
 ### Copy Tone Applied

@@ -100,7 +100,7 @@ response. Client name: [NAME]. Business type: [TYPE]. Session number: [N].
 
 ## Tier 2 — The Builder
 
-**Rate:** $110/session · 75 minutes · Best fit: Salem / Portland metro · ⭐ Most popular
+**Rate:** $110/session · 75 minutes · Best fit: Salem / Portland metro
 
 ### Who this is for
 Creators, marketers, consultants, and small business owners who know the basics and want to build real workflows. Ready to make AI a core part of how they work.
@@ -186,7 +186,7 @@ Pay-as-you-go is always available: book single sessions with no commitment. The 
 
 ---
 
-### Rhythm Plan — 6 Months ⭐ Recommended
+### Rhythm Plan — 6 Months
 
 **Best for:** Serious business transformation. Enough time to build, test, and refine real systems. 5% discount applied.
 
