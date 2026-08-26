@@ -138,20 +138,13 @@ Once you decide on a tier, you can book sessions as you go, or lock in a plan an
 Cadence is set together at the free call — weekly is typical, but the right rhythm is the one you'll
 actually keep. Start pay-as-you-go and move to a plan whenever you like.
 
-> [!warning] Session counts and monthly cost estimates removed 2026-07-29 — they are NOT published.
-> This table used to carry a **Sessions** column (12 / 24 / 36) and a *"What these plans cost per month
-> (approx.)"* block quoting **$300–$405/month** and **$415–$577/month**. The live site publishes
-> **none** of that: session counts, monthly cost estimates and "most popular" labels were all removed <!-- content-guard: allow -->
-> from the site on 2026-07-06 as unverified claims, and the pricing DNA doc states plainly that the
-> session-count economics are *Ernest's internal planning only — agents must not quote them.*
+> [!note] Published figures only.
+> The table above matches `/begin-learning/services/plans` exactly: **$75 / 60 min**, **$110 / 75 min**,
+> and **5%** / **10%** plan savings. These are the only pricing figures Ernest publishes. Session counts
+> and per-month cost estimates are internal planning arithmetic and have never been published.
 >
-> **They were still here, in the corpus the agents actually read.** An agent asked *"what does six
-> months cost?"* could answer **"$415–$577 a month"** — a figure Ernest has never published and is not
-> committed to. That is the "never invent prices" rule broken from the inside: the number is real
-> internal arithmetic, but quoting it to a visitor invents a public price.
->
-> Published figures only: **$75 / 60 min**, **$110 / 75 min**, **5%** and **10%** plan savings. The
-> table above now matches `/begin-learning/services/plans` exactly.
+> This section's correction history — including the withdrawn figures themselves — is kept out of this
+> corpus, in the vault: `Reference - Content Correction Ledger (2026-07-28).md`.
 
 ---
 
@@ -338,24 +331,18 @@ That's a fair question, and one we'll discuss directly. Part of good coaching is
 
 **There are none yet, and this knowledge base must not imply otherwise.**
 
-> [!warning] Removed 2026-07-29 — copy scaffolding that did not belong in a retrieval corpus.
-> This section held two testimonial templates (`[CLIENT NAME]`, `"[3–5 sentence quote…]"`) and a <!-- content-guard: allow -->
-> "Trust Signals (To Add)" list containing **invented statistics written as finished claims**: <!-- content-guard: allow -->
-> *"15+ clients coached since 2025"*, *"95% of clients complete their first month"*, *"Average session <!-- content-guard: allow -->
-> homework completion: 87%"*.
+> [!note] This section once held testimonial templates and an aspirational trust-signal list.
+> All of it was removed on 2026-07-29. Ernest has no paying clients yet, so none of it could have been
+> true. The withdrawn text is recorded in the vault, not here:
+> `Reference - Content Correction Ledger (2026-07-28).md`.
 >
-> **None of those numbers are real** — Ernest has no paying clients yet. They were drafting placeholders
-> for future copy, and in a document that is only ever read by a human editor they were harmless.
-> **This document is not only read by a human editor.** It is embedded and retrieved by the customer-
-> facing agents, which return passages to real visitors. The `(PLACEHOLDERS)` heading protects them only
-> if the chunker keeps heading context attached to the body text, and the ingest offers no such guarantee.
-> A retrieved fragment reading *"95% of clients complete their first month"* is a fabricated statistic <!-- content-guard: allow -->
-> served to a prospect.
->
-> **The rule this establishes: a retrieval corpus may not contain planning scaffolding.** Placeholders,
-> draft options, "to add" lists and sample copy all belong in the vault, where the audience is Ernest.
+> **The rule it established: a retrieval corpus may not contain planning scaffolding.** Placeholders,
+> draft options, aspirational lists and sample copy belong in the vault, where the audience is Ernest.
 > Anything in `agentic-brain/` should read as a true statement about the business today, because
-> something will eventually quote it verbatim and without context.
+> something will eventually quote it verbatim and without context. A label — "draft", "example",
+> "coming soon" — is not a scope guard: retrieval hands the model text, not document semantics.
+>
+> An audit trail and a served corpus are two different places.
 
 Real testimonials go here when real clients exist, and not before. Until then the agents should describe
 the offer and point to the free call — the honest substitute for social proof is specificity, not

@@ -72,10 +72,25 @@ const FABRICATED_STAT = /\b\d+\+\s*clients\b|\b\d{1,3}\s?%\s+of\s+(?:clients|stu
 // "(To Add)" list, or a "Testimonial N Placeholder" heading.
 const SCAFFOLDING     = /["“]\s*\[[^\]]{5,}\]|\(To Add\)|Testimonial\s+\d+\s+Placeholder|\bLorem ipsum\b/gi;
 
+// ─── Scan scope must equal ingest scope ─────────────────────────────────────
+// The ingest embeds README.md plus the five agent folders. `.github/` and
+// `scripts/` are repo machinery: never embedded, never retrieved, never served
+// to a visitor. The rules above are all about what an agent can say out loud,
+// so they cannot apply to a file no agent can ever read.
+//
+// This matters for more than tidiness. The corpus audit lives in `.github/`
+// precisely because an audit trail and a served corpus must be two different
+// places — and an audit necessarily quotes the hazards it found. Without this
+// skip, the only ways to keep that record in the repo are to fail CI forever or
+// to bury it in allow markers, and a marker that exists to preserve a quoted
+// violation is the failure mode this guard was written to catch.
+const NOT_INGESTED = new Set(['.github', 'scripts']);
+
 function walk(dir) {
   const out = [];
   for (const name of readdirSync(dir)) {
     if (name === '.git' || name === 'node_modules') continue;
+    if (dir === ROOT && NOT_INGESTED.has(name)) continue;
     const full = path.join(dir, name);
     if (statSync(full).isDirectory()) out.push(...walk(full));
     else if (name.endsWith('.md')) out.push(full);
