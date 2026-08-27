@@ -148,18 +148,18 @@ A finishing service for websites that are 80–90% done — broken forms, placeh
 
 ## Coaching Plans — Pay-as-you-go, or 3, 6, and 9 Months
 
-Pay-as-you-go is always available: book single sessions with no commitment. The named plans below trade commitment for rhythm (typically weekly sessions) and a discount.
+Pay-as-you-go is always available: book single sessions with no commitment. The named plans below trade commitment for rhythm (they are built around a weekly session) and a discount.
 
 ### Plan comparison
 
 | Plan | Duration | Cadence | Discount | Nonprofit sessions earned |
 |---|---|---|---|---|
 | Pay-as-you-go | — | Flexible, the client sets it | None | Hours still count |
-| Habit | 3 months | Typically weekly | None | 1 |
-| Rhythm | 6 months | Typically weekly | 5% | 2 |
-| Craft | 9 months | Typically weekly | 10% | 3 |
+| Habit | 3 months | Weekly | None | 1 |
+| Rhythm | 6 months | Weekly | 5% | 2 |
+| Craft | 9 months | Weekly | 10% | 3 |
 
-Cadence is agreed at the free call. Weekly is typical, but the right rhythm is the one the client will
+Cadence is agreed at the free call. The plans are built around a weekly rhythm, but the right one is what the client will
 actually keep.
 
 ---

@@ -87,7 +87,7 @@ and I'd rather you reschedule than sit through a session you can't focus on.
 
 ## How often we meet
 
-We agree the rhythm together on the free call. Weekly is a common starting point, but the right
+We agree the rhythm together on the free call. The plans are built around a weekly session, but the right
 cadence is the one you'll actually keep.
 
 You can book single sessions as you go with no commitment at all. If you'd rather lock in a longer

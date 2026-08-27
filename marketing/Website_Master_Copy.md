@@ -131,11 +131,11 @@ Once you decide on a tier, you can book sessions as you go, or lock in a plan an
 | Plan | Length | Cadence | Savings | Giveback |
 |------|--------|---------|---------|----------|
 | **Pay as you go** | Flexible | You set it | — | Earned every 12 hours |
-| **Habit** | 3 months | Typically weekly | — | 1 nonprofit session |
-| **Rhythm** | 6 months | Typically weekly | 5% off | 2 nonprofit sessions |
-| **Craft** | 9 months | Typically weekly | 10% off | 3 nonprofit sessions |
+| **Habit** | 3 months | Weekly | — | 1 nonprofit session |
+| **Rhythm** | 6 months | Weekly | 5% off | 2 nonprofit sessions |
+| **Craft** | 9 months | Weekly | 10% off | 3 nonprofit sessions |
 
-Cadence is set together at the free call — weekly is typical, but the right rhythm is the one you'll
+Cadence is set together at the free call. The plans are built around a weekly rhythm, but the right one is what you'll
 actually keep. Start pay-as-you-go and move to a plan whenever you like.
 
 Published pricing is **$75 / 60 min**, **$110 / 75 min**, and the **5%** and **10%** plan savings. No
