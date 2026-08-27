@@ -100,13 +100,28 @@ docker exec ernestofgaia_mastra node /app/survey-brain.js /app/data/brain.json /
 Expect `VERDICT: FAIL` with a large orphan and drift count. That is the problem, quantified.
 
 **B4. Capture what the agents currently say.** After the swap this is unrecoverable, and the record
-is the point.
+is the point. Run the verifier and keep its output:
 
 ```bash
-for q in "What results have your past clients gotten?" "Where is the site hosted?" "How do I book a session?"; do
-  echo "--- $q"; curl -s -m 40 https://ernestofgaia.xyz/api/chat -H 'Content-Type: application/json' -d "{\"message\":\"$q\"}"; echo
-done | tee ~/brain-before-$(date +%F).txt
+node .claude/scripts/verify-brain-claims.mjs | tee "before-$(date +%F).txt"
 ```
+
+> ⛔ **That transcript quotes what the agents served — which is the hazard text itself. It does not
+> go in this repo.** File it in the vault beside `Reference - Content Correction Ledger
+> (2026-07-28).md`. Putting evidence of a leak into a public repo is how the first version of the
+> audit went wrong; the same rule applies to the proof.
+
+**Baseline captured 2026-08-27**, before any merge — `❌ 4 claims served across 3 probes`:
+
+| Probe | What the live agent disclosed |
+|---|---|
+| `infra` | the host, the OS version, the container runtime and the whole deploy chain |
+| `market-stats` | an unsourced market statistic |
+| `other-sites` | directed the visitor to a subdomain that has **no TLS certificate** |
+
+The four original probes passed — that class was genuinely fixed on 2026-07-29. Everything the
+extension added, failed. Note the reverse is not proof: a probe that passes may mean the *agent
+prompt* refused, not that the chunk is gone. Only the corpus survey can tell you that.
 
 **B5. Back up the store.**
 

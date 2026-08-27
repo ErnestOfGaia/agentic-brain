@@ -403,14 +403,18 @@ named organisations Ernest applied to, the six withdrawn plan totals, the three 
 statistics, and the Australian rates. The redaction above is a **new commit on top**, which fixes
 the branch tip but leaves the earlier commits reachable.
 
-Two things follow, and the second is Ernest's call:
+**Decided 2026-08-27: Ernest reviewed this and accepted it.** No history rewrite, no force-push. The
+redaction stands on the branch tip; the earlier commits keep their unredacted copy. Recorded here so
+the decision is not re-litigated by a future reader who spots the old blobs — the same way the
+2026-07-18 history purge was consciously declined and should not be re-flagged.
+
+Two things followed from the exposure, for the record:
 
 1. **A squash-merge lands only the redacted tree.** A merge commit would carry every branch commit
-   into `main`'s history. If the branch is merged at all, squash it.
-2. **The branch history can be rewritten and force-pushed**, so the unredacted blobs are no longer
-   reachable from any ref. GitHub keeps orphaned objects addressable by SHA for a while and they can
-   persist in forks and caches, so this reduces exposure rather than erasing it. It is also a
-   force-push to a public repo, which is why it has not been done unilaterally.
+   into `main`'s history. Squashing is still the tidier option, but it is no longer load-bearing.
+2. A history rewrite was available and was **declined**. It would have reduced rather than erased
+   exposure in any case — GitHub keeps orphaned objects addressable by SHA, and they persist in
+   forks and caches.
 
 For scale: the fabricated statistics were already served live to visitors and are treated as
 disclosed (2026-07-18 ruling, history purge declined). The genuinely new exposure here is **F7 — the
