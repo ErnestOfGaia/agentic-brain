@@ -41,7 +41,7 @@ and personal rather than agency-priced.
 
 **Rate:** Free · 30 minutes · Online · No commitment
 
-A get-to-know-you call before any money changes hands. We talk through your goals, your current skill level, and what you're trying to accomplish — and Ernest recommends the tier that fits best. Book by texting "AI coaching" to 503-664-0546, emailing eog@ernestofgaia.xyz, or scheduling a discovery call through the site.
+A get-to-know-you call before any money changes hands. We talk through your goals, your current skill level, and what you're trying to accomplish — and Ernest recommends the tier that fits best. Book by texting "AI coaching" to 503-664-0546, or by emailing eog@ernestofgaia.xyz.
 
 ---
 
