@@ -38,7 +38,7 @@ The primary public-facing website for Ernest of Gaia's AI coaching and consultin
 |-------|-----------|
 | Frontend | React 19 + TypeScript + Vite |
 | Agents | Mastra framework + Claude API (Haiku model) |
-| Hosting | Hostinger VPS (Ubuntu 24.04) |
+| Hosting | Self-managed VPS |
 | CI/CD | GitHub Actions → GHCR → VPS pull |
 | Proxy/SSL | Nginx Proxy Manager + Let's Encrypt |
 

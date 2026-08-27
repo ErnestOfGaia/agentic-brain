@@ -44,7 +44,7 @@ A dedicated subdomain housing Ernest's professional history, spanning roles from
 | Layer | Technology |
 |-------|-----------|
 | Stack | Next.js (inferred from project notes) |
-| Hosting | Hostinger VPS |
+| Hosting | Self-managed VPS |
 | Proxy/SSL | Nginx Proxy Manager + Let's Encrypt |
 
 ## Key Links

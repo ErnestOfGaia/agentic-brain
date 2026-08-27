@@ -23,9 +23,10 @@ agentic-brain/
 ├── marketing/           # Marketer agent context: copy, pricing, market research
 ├── recruiter/           # Recruiter agent context: resume, work history
 │   └── roles/           # One file per role (structured YAML + narrative)
-├── router/              # Router agent context: site briefs, sprint specs
+├── router/              # Router agent context: the live site's own record
 │   └── projects-wiki/   # High-level project status for each active site
-└── secretary/           # Secretary agent context: infra, deployment standards
+└── secretary/           # (empty) — needs a scheduling/booking doc; the infra
+                         #   runbooks that were here are internal, not corpus
 ```
 
 ---
@@ -66,22 +67,51 @@ last-tagged: YYYY-MM-DD
 
 | Folder | Files |
 |---|---|
-| `business-dna/` | 3 |
+| `business-dna/` | 2 |
 | `marketing/` | 6 |
-| `recruiter/` | 4 |
+| `recruiter/` | 3 |
 | `recruiter/roles/` | 5 |
-| `router/` | 4 |
-| `router/projects-wiki/` | 3 |
-| `secretary/` | 2 |
-| **Total** | **27** |
+| `router/` | 1 |
+| `router/projects-wiki/` | 2 |
+| `secretary/` | 0 |
+| **Total** | **19** |
 
 ---
 
+## What belongs in this repo
+
+Every file here is embedded and retrieved by the public agents, and returned to real visitors as
+prose. Retrieval hands the model *text*, not document semantics — a chunk can be served without its
+heading, its date, or the sentence that qualified it. A label marking something as unwritten,
+hypothetical or forthcoming is therefore **not** a scope guard.
+
+So the test for any file is: **does every passage read as a true statement about the business today?**
+
+Belongs here — the offer, published pricing, service areas, contact routes, FAQs, work history.
+
+Does not belong here, regardless of how it is labelled:
+
+- Planning scaffolding — placeholders, draft options, "to add" lists, sample or template copy
+- Unpublished figures — internal pricing arithmetic, session-count economics, cost estimates
+- Claims about clients, outcomes or timelines that have not happened yet
+- Statistics without a source attached *in the same file* (a citation elsewhere never travels with the chunk)
+- Internal runbooks, infrastructure detail, sprint status, and local filesystem paths
+- Private third-party names, and pasted transcripts from other tools or assistants
+- Audit trails and correction notices — including ones that quote what was removed
+
+The last point is the one that bites: a note explaining a fabrication still contains the fabrication.
+**An audit trail and a served corpus are two different places.** Corrections belong in the vault
+ledger; `.github/` and `scripts/` are not ingested and hold repo-facing records.
+
+`scripts/content-guard.mjs` enforces the machine-checkable slice of this in CI. It catches phrasings,
+not intent — a clean run is a floor, not a certificate.
+
 ## Source
 
-All files originate from the Obsidian vault at `C:\Users\Owner\.claude\Ideas & Projects`.  
-Tagged and curated: April 15, 2026.  
-Maintained by: Ernest Of Gaia + Claude (Cowork mode).
+Files originate from Ernest's Obsidian vault and are exported here once tagged `agenticbrain: true`.
+Tagged and curated: April 15, 2026. Last hardening sweep: 2026-08-26
+(see `.github/CORPUS_HARDENING_AUDIT_2026-08-26.md`).  
+Maintained by: Ernest Of Gaia + Claude.
 
 ---
 
