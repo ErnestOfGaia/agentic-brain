@@ -2,10 +2,25 @@
 **Date:** 2026-08-26 · **Scope:** every ingested source in the repo
 **Status:** 29 findings; all six remediation stages applied on this branch (§7). Not merged.
 
-> **Why this file lives in `.github/`.** `.github/` and `scripts/` are not ingested. An audit trail
-> and a served corpus must be two different places — that is the whole finding of the 2026-07-29
-> sweep, restated. Putting this report in `marketing/` or at the repo root would embed a document
-> full of quoted fabrications into the exact index it is warning about.
+> **Why this file lives in `.github/`.** The ingest's `walkMarkdown()` skips dot-prefixed entries, so
+> `.github/` is excluded structurally. An audit trail and a served corpus must be two different
+> places — that is the whole finding of the 2026-07-29 sweep, restated. Putting this report in
+> `marketing/` or at the repo root would embed a document full of quoted hazards into the exact
+> index it is warning about.
+
+> ⚠️ **And a correction to that reasoning, made on the third pass.** The first version of this file
+> quoted the hazards it found *verbatim*: Ernest's private job-application targets, the withdrawn
+> plan totals, the fabricated statistics, the Australian rates. `.github/` kept them out of the
+> **ingest**. It does nothing about the **repo being public** — and this repo is public.
+>
+> That is the same mistake as the one this audit is about, one level up. The sweep's whole finding is
+> that a label is not a boundary; I then treated a *directory* as a boundary when it only ever
+> controlled one of the two exposures. Not-ingested and not-published are different properties.
+>
+> All such passages are now referenced by finding number instead of quoted. The verbatim record lives
+> in the vault ledger `Reference - Content Correction Ledger (2026-07-28).md`, which is private and
+> already holds it. **The branch carrying the unredacted version was pushed to the public remote
+> before this was caught** — see §7 for what that means and what is left to decide.
 
 ---
 
@@ -98,12 +113,12 @@ claims were withdrawn:
 | Line | Content |
 |---|---|
 | 165–170 | Plan table with the **Sessions** column: 12 / 24 / 36 |
-| 180–181 | Habit: Foundations 12 × $75 = **$900**; Builder 12 × $110 = **$1,320** |
-| 195–196 | Rhythm: **$71.25**/session → **$1,710**; **$104.50**/session → **$2,508** |
-| 210–211 | Craft: **$67.50**/session → **$2,430**; **$99**/session → **$3,564** |
+| 180–181 | Habit: a session count × each tier rate, with a four-figure total per tier |
+| 195–196 | Rhythm: a discounted per-session rate and a four-figure total per tier |
+| 210–211 | Craft: a further-discounted per-session rate and a four-figure total per tier |
 
 The mitigation was written down and never carried out. A visitor asking *"what does six months of
-coaching cost?"* retrieves this table and is quoted **$2,508** — a total Ernest has never published
+coaching cost?"* retrieves this table and is quoted a four-figure total Ernest has never published
 and is not committed to. This is the same breach the 2026-07-29 note describes as *"the 'never
 invent prices' rule broken from the inside"*, still live, in the file that was named as the fix.
 
@@ -141,8 +156,8 @@ Two `[!warning]` blocks quote the withdrawn material verbatim inside the served 
 - **141–154** quotes **"$300–$405/month"** and **"$415–$577/month"** — the dollar figures on line
   143 carry *no* allow marker, because no rule matches them. The chunk is retrievable on any
   monthly-cost query.
-- **342–345, 352** quote *"15+ clients coached since 2025"*, *"95% of clients complete their first
-  month"*, *"Average session homework completion: 87%"* — the known residual.
+- **342–345, 352** quote all three fabricated client statistics — a client count, a completion
+  rate and a homework-completion average — the known residual.
 
 Not retrieved today is not unreachable. Both notices are prose *about* removed claims, and a
 chunker has no way to know the difference between a fabricated statistic and a fabricated statistic
@@ -169,8 +184,8 @@ built"*, **line 20** *"Live URL: https://resume.ernestofgaia.xyz ( live !! )"*.
 ### F7 — Private job-application targets *(High, privacy)*
 
 `ernest_resume_library_master_draft.md:356–372` lists the source `.docx` filenames, which name
-**where Ernest has applied or drafted letters**: *Nate Hagens*, *NetNada*, *Milk Road*,
-*Climate Works*. The recruiter agent is public. Asked *"where has Ernest applied?"*, it can answer.
+**where Ernest has applied or drafted letters**: four named organisations (recorded in the vault
+ledger, not here). The recruiter agent is public. Asked *"where has Ernest applied?"*, it can answer.
 
 This is a class the guard does not model at all — it covers phone numbers, personal emails and
 Drive URLs, not third-party names in a private context. Same shape as the 2026-07-18 leak,
@@ -217,13 +232,13 @@ disclosure with no privacy policy attached.
 
 Served as fact, no citation travelling with the chunk:
 
-- *"Oregon median household income (2024) $83,011"*, *"Small biz AI spend growth (2025) ~36% YoY"*,
+- A state median-household-income figure, a national small-business AI-spend growth rate,
   and **unemployment broken out by race** — *"3.9% (white), 5.5% (Black), 5.2% (Hispanic/Latino)"*.
   An uncited racial-disparity statistic served by a coaching chatbot is the worst-shaped item here.
 - **Named real organisations with prices attached**: *"Oregon Coast SBDC group workshops — $25/2hr"*,
   *"Portland AI agencies (retainer) $2,000–$10,000/month"*, and in the AU brief four named firms —
-  *Immersive AI, Mindset AI, AI Avenue, Harbour Edge Intelligence* — at *"$399–$1,249 per session"*.
-- **Unpublished AU pricing**: *"$150–$200/hr"*, *"6-month engagement ~$7,200–$9,600 total"*, in a
+  four named Sydney firms, each with a per-session price range attached.
+- **Unpublished AU pricing**: an hourly rate range and a four-figure engagement total, in a
   market Ernest does not yet operate in.
 
 Note the structural point: `marketing/Australia Market Research — Sydney Penrith.md` **does** carry
@@ -273,8 +288,8 @@ Every marker in an ingested file, with a judgment. All six are in `marketing/Web
 | 144 | *"…and \"most popular\" labels were all removed"* | `TRACK_RECORD` | **Legitimate but misplaced.** Correctly exempts prose *about* a removed label. The prose should not be in the corpus at all (F3). |
 | 342 | *"…two testimonial templates (`[CLIENT NAME]`, `"[3–5 sentence quote…]"`)"* | `SCAFFOLDING` | **Silencing a real hazard.** A quoted fake-testimonial template, kept as an example of a quoted fake-testimonial template. |
 | 343 | *"\"Trust Signals (To Add)\" list containing invented statistics…"* | `SCAFFOLDING` | **Silencing a real hazard.** Reintroduces the exact `(To Add)` string the rule targets. |
-| 344 | *"15+ clients coached since 2025", "95% of clients complete their first month", "Average session…"* | `FABRICATED_STAT` | **Silencing the original hazard verbatim.** This is the residual named in the brief. All three numbers survive here in full. |
-| 352 | *"A retrieved fragment reading \"95% of clients complete their first month\"…"* | `FABRICATED_STAT` | **Silencing a real hazard.** A second copy of the same statistic. |
+| 344 | all three fabricated client statistics, quoted in full | `FABRICATED_STAT` | **Silencing the original hazard verbatim.** This is the residual named in the brief. All three numbers survived here. |
+| 352 | prose re-quoting the completion-rate statistic | `FABRICATED_STAT` | **Silencing a real hazard.** A second copy of the same statistic. |
 | 381 | *"Text CTAs should be prominent on mobile since most people browse on phones"* | `TRACK_RECORD` | **Legitimate exemption.** "Most people" here means the general public, not Ernest's clients — a true generalisation, correctly exempted. *(The surrounding internal implementation notes are a separate, lower-severity issue.)* |
 
 **Two of six are genuine general/product vocabulary. Four of six are the CI being deliberately
@@ -379,6 +394,28 @@ reviewable per-commit; nothing is merged.
 
 **Corpus went from 27 files to 17.** Nothing was deleted without first confirming the original in the
 vault — these were exports, not originals.
+
+### ⚠️ Open decision — the unredacted audit is already on the public remote
+
+Commits `e2260f1` … `e22b733` on `hardening/corpus-wide-sweep-2026-08-26` were pushed to
+`github.com/ErnestOfGaia/agentic-brain` (public) carrying the unredacted version of this file: four
+named organisations Ernest applied to, the six withdrawn plan totals, the three fabricated
+statistics, and the Australian rates. The redaction above is a **new commit on top**, which fixes
+the branch tip but leaves the earlier commits reachable.
+
+Two things follow, and the second is Ernest's call:
+
+1. **A squash-merge lands only the redacted tree.** A merge commit would carry every branch commit
+   into `main`'s history. If the branch is merged at all, squash it.
+2. **The branch history can be rewritten and force-pushed**, so the unredacted blobs are no longer
+   reachable from any ref. GitHub keeps orphaned objects addressable by SHA for a while and they can
+   persist in forks and caches, so this reduces exposure rather than erasing it. It is also a
+   force-push to a public repo, which is why it has not been done unilaterally.
+
+For scale: the fabricated statistics were already served live to visitors and are treated as
+disclosed (2026-07-18 ruling, history purge declined). The genuinely new exposure here is **F7 — the
+job-application targets**, which are private, about identifiable third parties, and were never
+public before. That is the one worth acting on.
 
 ### What deliberately was *not* changed
 

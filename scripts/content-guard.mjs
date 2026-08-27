@@ -211,6 +211,16 @@ for (const file of walk(ROOT)) {
   });
 }
 
+// Print the scope every run. A guard that silently stops scanning a directory
+// looks exactly like a guard that found nothing, and this file's own scan scope
+// has been wrong once already (2026-08-26: `scripts/` was hardcoded as
+// not-ingested when the ingest never excluded it). Make the scope visible so a
+// change to it shows up in CI output instead of being inferred from a pass.
+const scanned = walk(ROOT).map(f => path.relative(ROOT, f).replace(/\\/g, '/')).sort();
+console.log(`content-guard: scanned ${scanned.length} markdown file(s)`);
+for (const f of scanned) console.log(`  · ${f}`);
+console.log('');
+
 if (violations.length === 0) {
   console.log('content-guard: OK — no private contact data or he/him found.');
   process.exit(0);

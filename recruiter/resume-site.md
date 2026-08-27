@@ -45,7 +45,6 @@ A dedicated subdomain housing Ernest's professional history, spanning roles from
 |-------|-----------|
 | Stack | Next.js |
 | Hosting | Self-managed VPS |
-| Proxy/SSL | Nginx Proxy Manager + Let's Encrypt |
 
 ## Key Links
 - **Live:** [resume.ernestofgaia.xyz](https://resume.ernestofgaia.xyz)
