@@ -86,19 +86,36 @@ next restart. Clear it before continuing:
 docker exec ernestofgaia_mastra rm -f /app/data/.brain-ingest-incomplete
 ```
 
-**B2. Install the survey tool** (from this directory, once):
+**B2. Install the survey tool.** The repo is not checked out on the VPS, so fetch it from GitHub —
+`curl` is in the image. Use `main` once the merge has landed:
 
 ```bash
-docker cp .github/survey-brain.js ernestofgaia_mastra:/app/survey-brain.js
+docker exec ernestofgaia_mastra sh -c 'curl -fsSL https://raw.githubusercontent.com/ErnestOfGaia/agentic-brain/main/.github/survey-brain.js -o /app/survey-brain.js && node --check /app/survey-brain.js && echo "survey tool installed"'
 ```
 
-**B3. Record the "before" state.** Keep this output — it is the evidence of what was being served.
+`-f` makes a 404 an error instead of writing an HTML error page to disk, and `node --check` proves
+what landed is parseable before you depend on it.
+
+**B3. Record the baseline.** Run it with **no corpus argument**:
 
 ```bash
-docker exec ernestofgaia_mastra node /app/survey-brain.js /app/data/brain.json /app/data/agentic-brain-cache
+docker exec ernestofgaia_mastra node /app/survey-brain.js /app/data/brain.json
 ```
 
-Expect `VERDICT: FAIL` with a large orphan and drift count. That is the problem, quantified.
+Write down the record count and the source list. Do **not** pass `/app/data/agentic-brain-cache`
+here: that cache still holds the *pre-merge* corpus, so the store would be measured against the very
+corpus it was built from and could report `CLEAN` while serving everything this change removes. The
+meaningful comparison needs the new corpus, which does not reach the box until C2.
+
+**B3a. (Optional, after C2 — the number worth keeping.)** Once staging has cloned the new corpus,
+measure the *old* store against it. This is the size of the problem, quantified on your own box:
+
+```bash
+docker exec ernestofgaia_mastra node /app/survey-brain.js /app/data/brain.json /app/data/staging/data/agentic-brain-cache
+```
+
+Expect `VERDICT: FAIL` with large orphan and drift counts. Measured here before you started: 177
+orphans, 201 drifted, 19 missing.
 
 **B4. Capture what the agents currently say.** After the swap this is unrecoverable, and the record
 is the point. Run the verifier and keep its output:
