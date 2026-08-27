@@ -298,7 +298,7 @@ When the marker exists to preserve a *quotation of a violation*, the quotation b
 | `mvp.ernestofgaia.xyz` | HTTP 200 |
 | **`mobile.ernestofgaia.xyz`** | **TLS handshake fails — no certificate.** HTTP 200 → NPM "Default Site" |
 | **`orchard.ernestofgaia.xyz`** | **TLS handshake fails — no certificate.** HTTP 200 → NPM "Default Site" |
-| **`pelican.ernestofgaia.xyz`** | **HTTP 502 Bad Gateway** |
+| **`pelican.ernestofgaia.xyz`** | **HTTP 502 Bad Gateway** — but see the note below |
 | DNS for all five subdomains | Resolves to `72.61.56.148` — the failures are proxy/cert, not DNS |
 | `github.com/ErnestOfGaia/ai-tutoring-website` | 200 |
 | `github.com/ErnestOfGaia/ernestofgaia-resume` | 200 — so *"(to be created)"* is stale |
@@ -306,6 +306,16 @@ When the marker exists to preserve a *quotation of a violation*, the quotation b
 | Vault ledger holds the 3 stats | **Yes** — lines 27, 294, 331–332, 339 |
 
 Three advertised endpoints are broken, and one of them is in the client welcome packet.
+
+> **Note on `pelican.` — the 502 is real but it is not the Pellito app.** The app is live and
+> healthy at **`pelican.mechanicalcupcakes.fun`** (HTTP 200, including `/login`). Both hostnames
+> point at the same VPS (`72.61.56.148`); `pelican.ernestofgaia.xyz` is a **stale proxy host left
+> behind when the app moved to the mechanicalcupcakes.fun domain**. So the finding was accurate
+> about the hostname the corpus advertised, and misleading about the app — worth stating plainly,
+> because "Pellito is down" and "an old proxy entry points at nothing" are very different problems.
+> The row lived in `secretary/infrastructure-vps.md`, which is evicted, so the corpus side is
+> already closed. What remains is a dangling Nginx Proxy Manager host, which is tidy-up, not an
+> outage.
 
 ---
 
