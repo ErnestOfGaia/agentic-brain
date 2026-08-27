@@ -15,18 +15,16 @@ last-tagged: 2026-04-15
 
 # Ernest Of Gaia — Business DNA Record
 
-*This is the master profile and source of truth for the EoG AI Coaching brand. Use sections of this document to populate profiles, bios, service listings, print materials, and client communications. Add detail to each section over time — this document grows with the business.*
+*The brand record for Ernest Of Gaia AI Coaching: who it serves, what it offers, and how it presents itself across channels. The live site is canonical for services, pricing and plans.*
 
 ---
 
 ## 1. Brand Identity
 
 **Business Name:** Ernest Of Gaia — Local A.I. Guide
-**Tagline:** _[add primary tagline — e.g., "Your local guide to AI tools"]_
 **Aesthetic:** Local tradesperson meets local artist. Nature-based. Practical. Grounded. Not corporate, not hype-driven.
 **Geographic Identity:** Pacific City, Oregon → Portland metro. Oregon Coast corridor. Eventually: Greater Western Sydney (Penrith), Australia.
 **Tone of Voice:** Plain language. Honest. Practical. "Just the facts" quarterly review vibe. Warm but not salesy.
-**Visual Brand:** _[add color palette, logo status, van/signage details when finalized]_
 
 ---
 
@@ -50,7 +48,6 @@ I provide in-person, one-on-one AI coaching and tutoring for individuals, small 
 **Primary audience:** Non-technical adults (individuals and small business owners) in the Oregon Coast–Portland corridor
 
 **Demographics:**
-- Age: _[add range]_
 - Occupation types: Local trades, small retail, hospitality, administrative, professional services
 - Tech comfort level: Low to moderate — comfortable with phones and basic apps but not coding or AI tools
 - Discovery channels: Local business card displays (RV dealers, automotive, artisan shops, tour guides), word of mouth, local Google search
@@ -78,7 +75,7 @@ I provide in-person, one-on-one AI coaching and tutoring for individuals, small 
 
 ## 5. Platform Profiles
 
-*Copy from this section to populate profiles on each platform. Expand each with platform-specific requirements.*
+*How the brand presents itself on each channel.*
 
 ### LinkedIn
 
@@ -104,18 +101,14 @@ I specialize in working with clients who want clear, jargon-free explanations, h
 
 ### Website (ernestofgaia.xyz)
 
-**Hero tagline:** _[add — something short and direct]_
-**Sub-headline:** _[add]_
-**CTA button:** _[add — e.g., "Let's connect" / "Book a free call"]_
-**Service description:** _(pull from Core Offer section above)_
-**SEO/GEO tags needed:** _[to develop — local Oregon Coast + Portland keywords, GEO tags for service area]_
+Live. Coaching content is published under `/begin-learning`. The service description is the Core Offer
+section above.
 
 ---
 
 ### YouTube
 
 **Channel:** https://www.youtube.com/@ErnestOfGaia
-**Channel description:** _[add]_
 **Content cadence:** Quarterly AI tool reviews — practical usage reports, "just the facts" vibe
 **Content format:** How I'm actually using AI tools, each quarter, honest assessment
 
@@ -124,32 +117,19 @@ I specialize in working with clients who want clear, jargon-free explanations, h
 ### X (Twitter)
 
 **Handle:** https://x.com/ErnestOfGaia
-**Bio:** _[add]_
-**Content style:** _[add — same quarterly review vibe, shorter format]_
 
 ---
 
 ### Business Cards
 
-**Front:**
 - Name: Ernest Of Gaia
 - Title: Local A.I. Guide
-- Tagline: _[add]_
-- Phone: _[add]_
-- Email: _[add — eog@ernestofgaia.xyz preferred]_
 - Website: ernestofgaia.xyz
-
-**Back:**
-- _[add — services summary, QR code to site or booking, visual element]_
-
-**Collector's page on website:** _[to build — a simple page linked from the card for new contacts to learn more / book a call]_
 
 ---
 
 ### Van Magnet Sign
 
-**Layout:** _[to design — include name, tagline, website URL, phone]_
-**Size:** _[add standard magnet dimensions]_
 **Visual:** Nature-based EoG branding consistent with site aesthetic
 
 ---
@@ -161,7 +141,7 @@ I specialize in working with clients who want clear, jargon-free explanations, h
 **Secondary channels:** Local presence (business cards at local businesses, van signage), Google Business Profile (local SEO)
 
 **Content pipeline:**
-- Q1 2026 review in progress — historical AI tool usage briefs (ChatGPT, Claude, Perplexity, Gemini, Abacus, etc.)
+- Quarterly AI tool usage briefs, covering the tools actually in the working stack
 - Pull transcripts from AI tool sessions → summarize into quarterly brief
 - Share via YouTube, LinkedIn, X
 
@@ -184,10 +164,7 @@ This distinguishes the service from "AI hype" content and builds long-term trust
 ## 8. Business Operations
 
 **Primary email:** eog@ernestofgaia.xyz
-**Obsidian vault:** Connected to Claude — this vault is the business brain
-**Invoicing:** _[add — tool/process]_
-**Contracts:** _[add — template/tool]_
-**Scheduling:** _[add — booking tool or process]_
+**Text (preferred):** 503-664-0546
 
 ---
 
@@ -195,16 +172,15 @@ This distinguishes the service from "AI hype" content and builds long-term trust
 
 ### Oregon → Australia
 
-**Target market (future):** Western Sydney / Penrith, NSW, Australia
-- Strong AI literacy demand (240% growth in AI hiring, 48% of SMEs not using AI)
-- Penrith economy: $35.6B annually, strong small business density, tradesperson culture (13% of workforce)
-- Competition is CBD-focused and corporate — local, long-term coaching is an open niche
-- Pricing benchmark: $150–200/hr; 6-month engagement ~$7,200–$9,600 total
-- Cultural fit: Trades culture, multicultural diversity, practical learning values — nature-based EoG brand translates well
-- Feasibility: GO — pending visa approval
+**Possible future market:** Western Sydney / Penrith, NSW, Australia.
 
-**Status:** Side research note. Visa application in progress (3-31-2026). Test Oregon business model first, replicate in Penrith if visa approved.
+The reasoning is that the same model — local, long-term, one-to-one coaching for non-technical
+people — suits a trades-heavy suburban market that CBD-focused consultancies don't serve, and that
+the nature-based EoG brand translates.
+
+**Status:** Nothing is committed. There is no Australian presence, no Australian pricing, and no
+date. The Oregon model is being tested first.
 
 ---
 
-*Last updated: 2026-03-31 | This is a living document — fill in placeholders as details are confirmed.*
+*The live site at ernestofgaia.xyz is canonical for services, pricing and plans.*

@@ -138,20 +138,8 @@ Once you decide on a tier, you can book sessions as you go, or lock in a plan an
 Cadence is set together at the free call — weekly is typical, but the right rhythm is the one you'll
 actually keep. Start pay-as-you-go and move to a plan whenever you like.
 
-> [!warning] Session counts and monthly cost estimates removed 2026-07-29 — they are NOT published.
-> This table used to carry a **Sessions** column (12 / 24 / 36) and a *"What these plans cost per month
-> (approx.)"* block quoting **$300–$405/month** and **$415–$577/month**. The live site publishes
-> **none** of that: session counts, monthly cost estimates and "most popular" labels were all removed <!-- content-guard: allow -->
-> from the site on 2026-07-06 as unverified claims, and the pricing DNA doc states plainly that the
-> session-count economics are *Ernest's internal planning only — agents must not quote them.*
->
-> **They were still here, in the corpus the agents actually read.** An agent asked *"what does six
-> months cost?"* could answer **"$415–$577 a month"** — a figure Ernest has never published and is not
-> committed to. That is the "never invent prices" rule broken from the inside: the number is real
-> internal arithmetic, but quoting it to a visitor invents a public price.
->
-> Published figures only: **$75 / 60 min**, **$110 / 75 min**, **5%** and **10%** plan savings. The
-> table above now matches `/begin-learning/services/plans` exactly.
+Published pricing is **$75 / 60 min**, **$110 / 75 min**, and the **5%** and **10%** plan savings. No
+other pricing figures are published; the table above matches `/begin-learning/services/plans` exactly.
 
 ---
 
@@ -206,15 +194,16 @@ Sessions follow this rhythm:
 
 ---
 
-#### STEP 5: See Real Results
-By your 3rd or 4th session, you'll notice:
-- You're comfortable using AI tools without help
-- You're solving real problems with them
-- You're thinking in prompts and workflows, not just random questions
+#### STEP 5: Build Toward Not Needing Me
+The goal is that you stop needing the sessions. What we're building toward:
+- Using AI tools without needing help to get started
+- Solving your own real problems with them, not practice exercises
+- Thinking in prompts and workflows rather than one-off questions
+- **Tier 1:** an AI toolkit that's part of your routine, and enough confidence to show someone else
+- **Tier 2:** workflows running, integrations working, and a prompt library you reuse and improve
 
-By 6 months, depending on your tier and goals:
-- **Tier 1:** You're teaching others. Your AI toolkit is part of your daily routine.
-- **Tier 2:** You've got workflows running, integrations working, and a library of prompts you reuse and improve.
+How long that takes depends on your goals and how much you practice between sessions. We set targets
+for it together at the free call — it isn't a schedule I can promise you up front.
 
 ---
 
@@ -226,7 +215,7 @@ By 6 months, depending on your tier and goals:
 | You figure it out alone | Passive (you watch) | Active (you do it) |
 | No accountability | No follow-up | Ongoing relationship, homework, recap docs |
 | Generic examples | Generic examples | Your actual device, your actual problems |
-| Cost: $0–$500 one-time | Cost: $25–$100 per session | Cost: $75–$110 per session, results-driven |
+| Priced per course | Priced per seat | $75–$110 per session |
 
 ---
 
@@ -264,11 +253,13 @@ Eligible organizations include (not limited to Oregon):
 
 ---
 
-### Real Impact
-In 2025, this program will support:
-- Small nonprofit staff learning to use AI for efficiency
-- Teachers integrating AI literacy into classrooms
-- Community organizations stretching limited resources further
+### Who the Donated Sessions Are For
+- Small nonprofit staff who want to use AI to stretch limited time
+- Teachers bringing AI literacy into classrooms
+- Community organizations doing more with fewer resources
+
+The program is new. There are no donated sessions to report yet — the first one is earned as soon as a
+client completes 12 hours of paid coaching.
 
 **Your coaching hours = Community AI literacy.**
 
@@ -336,65 +327,11 @@ That's a fair question, and one we'll discuss directly. Part of good coaching is
 
 ## 6. SOCIAL PROOF & TESTIMONIALS
 
-**There are none yet, and this knowledge base must not imply otherwise.**
+There are no testimonials, case studies or client references yet, because there are no paying clients
+yet. Real ones go here when real clients exist, and not before.
 
-> [!warning] Removed 2026-07-29 — copy scaffolding that did not belong in a retrieval corpus.
-> This section held two testimonial templates (`[CLIENT NAME]`, `"[3–5 sentence quote…]"`) and a <!-- content-guard: allow -->
-> "Trust Signals (To Add)" list containing **invented statistics written as finished claims**: <!-- content-guard: allow -->
-> *"15+ clients coached since 2025"*, *"95% of clients complete their first month"*, *"Average session <!-- content-guard: allow -->
-> homework completion: 87%"*.
->
-> **None of those numbers are real** — Ernest has no paying clients yet. They were drafting placeholders
-> for future copy, and in a document that is only ever read by a human editor they were harmless.
-> **This document is not only read by a human editor.** It is embedded and retrieved by the customer-
-> facing agents, which return passages to real visitors. The `(PLACEHOLDERS)` heading protects them only
-> if the chunker keeps heading context attached to the body text, and the ingest offers no such guarantee.
-> A retrieved fragment reading *"95% of clients complete their first month"* is a fabricated statistic <!-- content-guard: allow -->
-> served to a prospect.
->
-> **The rule this establishes: a retrieval corpus may not contain planning scaffolding.** Placeholders,
-> draft options, "to add" lists and sample copy all belong in the vault, where the audience is Ernest.
-> Anything in `agentic-brain/` should read as a true statement about the business today, because
-> something will eventually quote it verbatim and without context.
-
-Real testimonials go here when real clients exist, and not before. Until then the agents should describe
-the offer and point to the free call — the honest substitute for social proof is specificity, not
-borrowed credibility.
-
----
-
-## IMPLEMENTATION NOTES FOR ERNESTOFGAIA.XYZ
-
-### Homepage Structure Suggested Order
-1. Hero section (Headline, subheading, CTA)
-2. "Three ways to work together" (all tiers visible)
-3. "How it works" (5-step visual flow)
-4. Nonprofit giveback (trust builder, values alignment)
-5. Testimonials (once you have 3–5 clients)
-6. FAQ / Contact CTAs
-7. Footer with contact info
-
-### Key UX Considerations
-- **Phone button:** Make [503-664-0546] clickable as `tel:` link so mobile users tap to text/call
-- **Tier comparison:** Consider a side-by-side comparison table for Tier 1 vs. Tier 2
-- **CTA repetition:** Place "Text to start" CTA at least 3 times on homepage (hero, mid-page, footer)
-- **Mobile-first:** Text CTAs should be prominent on mobile since most people browse on phones <!-- content-guard: allow -->
-- **Scarcity/urgency:** Not recommended. Your brand is about genuine relationships, not FOMO.
-
-### Copy Tone Applied
-- Plain language (no jargon, no hype)
-- Warm but not salesy
-- Practical and specific (actual prices, actual tools, actual commitment)
-- Honest about limitations (what AI can't do, when to involve teams)
-- Community-focused (nonprofit giveback, local geography)
-
-### Next Steps
-1. Review this master copy with your brand and business
-2. Adapt sections to match your website's visual hierarchy
-3. Add real testimonials and trust signals as you work with clients
-4. Update pricing or service descriptions if needed
-5. Set up phone button with clickable tel: links
-6. Add FAQ section as common questions emerge
+The honest substitute for social proof is specificity: what a session actually covers, what you leave
+with, and what it costs.
 
 ---
 

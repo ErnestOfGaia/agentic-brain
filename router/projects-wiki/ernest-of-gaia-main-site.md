@@ -9,7 +9,6 @@ tags:
   - brief
 topics:
   - project-brief
-  - infrastructure
 agenticbrain: true
 agent-role: [router, marketing, secretary, recruiter]
 last-tagged: 2026-04-15
@@ -20,10 +19,10 @@ last-tagged: 2026-04-15
 > The digital front door for the Ernest of Gaia AI coaching brand.
 
 ## Overview
-The primary public-facing website for Ernest of Gaia's AI coaching and consulting services. Built as an interactive experience with an embedded agent interface that routes visitors to the right service (coaching inquiry, scheduling, or hiring). Currently in active Spring Sprint development ahead of business card printing.
+The primary public-facing website for Ernest of Gaia's AI coaching and consulting services. Built as an interactive experience with an embedded agent interface that routes visitors to the right service (coaching inquiry, scheduling, or hiring).
 
 ## Status
-**Active Sprint** — Week 1–3 of Spring Sprint. Chat agents functional; SEO polish in progress.
+**Live in production.** The chat agents are wired to real LLM calls, and the coaching content is published under `/begin-learning`.
 
 ## Goals
 - Launch a fully functional, mobile-responsive coaching site
@@ -38,18 +37,10 @@ The primary public-facing website for Ernest of Gaia's AI coaching and consultin
 |-------|-----------|
 | Frontend | React 19 + TypeScript + Vite |
 | Agents | Mastra framework + Claude API (Haiku model) |
-| Hosting | Hostinger VPS (Ubuntu 24.04) |
+| Hosting | Self-managed VPS |
 | CI/CD | GitHub Actions → GHCR → VPS pull |
-| Proxy/SSL | Nginx Proxy Manager + Let's Encrypt |
 
 ## Key Links
 
 - **Live:** [ernestofgaia.xyz](https://ernestofgaia.xyz)
-- **Mobile subdomain:** [mobile.ernestofgaia.xyz](https://mobile.ernestofgaia.xyz)
-- **MVP (deprecated):** [mvp.ernestofgaia.xyz](https://mvp.ernestofgaia.xyz)
-
-## Next Steps
-- Complete chat UX warm acknowledgment responses
-- Optimize images for mobile (librarian character, background photo)
-- Finalize `llms.txt` and JSON-LD structured data
-- Print business cards once site is live and verified
+- **Coaching content:** [ernestofgaia.xyz/begin-learning](https://ernestofgaia.xyz/begin-learning)

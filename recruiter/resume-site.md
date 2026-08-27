@@ -20,7 +20,7 @@ last-tagged: 2026-04-15
 A dedicated subdomain housing Ernest's professional history, spanning roles from 2009–2022 across environmental education, farm food systems, disaster relief, tech education, and hospitality (Pelican Brewing). The site supports the coaching brand by providing a credibility and background layer for prospective clients and partners.
 
 ## Status
-**Live** — Deployed at resume.ernestofgaia.xyz. Prototype notes and inspiration documented.
+**Live** — deployed at resume.ernestofgaia.xyz.
 
 ## Goals
 - Present a clean, navigable work history that supports the Ernest of Gaia brand
@@ -43,9 +43,8 @@ A dedicated subdomain housing Ernest's professional history, spanning roles from
 
 | Layer | Technology |
 |-------|-----------|
-| Stack | Next.js (inferred from project notes) |
-| Hosting | Hostinger VPS |
-| Proxy/SSL | Nginx Proxy Manager + Let's Encrypt |
+| Stack | Next.js |
+| Hosting | Self-managed VPS |
 
 ## Key Links
 - **Live:** [resume.ernestofgaia.xyz](https://resume.ernestofgaia.xyz)

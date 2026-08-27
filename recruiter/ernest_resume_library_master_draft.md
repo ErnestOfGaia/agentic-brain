@@ -9,9 +9,10 @@ agent-role: [recruiter]
 last-tagged: 2026-04-15
 ---
 
-# Ernest Rando - Consolidated Resume Library Master Draft
+# Ernest Rando — Work History and Skills
 
-This document combines and simplifies the major information found across the project files so it can be copied into Google Docs and adapted for future resumes, cover letters, bios, and applications.
+A consolidated record of Ernest's professional background: roles, education, training, skills, and a
+short bio, kept in one place so it stays consistent wherever it is used.
 
 ## Contact Information
 
@@ -20,7 +21,6 @@ Pacific City, Oregon, USA
 Phone: 503-664-0546 (text preferred)  
 Email: eog@ernestofgaia.xyz  
 YouTube: @ErnestOfGaia  
-Discord: ernest_of_gaia  
 Twitter/X: @ErnestOfGaia  
 
 ## Professional Summary
@@ -127,7 +127,7 @@ This makes Ernest unusually comfortable for hospitality and mission-driven roles
 
 ### Pelican Brewing Company - Pacific City, Oregon
 **Kitchen Team Member / Line Cook / Hospitality Support**  
-**2022 or 2023 - Present**
+**2022 - Present**
 
 - Works in a fast-paced, high-volume kitchen environment
 - Supports daily kitchen operations and service execution
@@ -196,11 +196,10 @@ This makes Ernest unusually comfortable for hospitality and mission-driven roles
 ### Midwest Permaculture
 - Permaculture Design Certification
 
-### Additional Training Mentioned Across Materials
+### Additional Training and Certifications
 - First Aid
 - CPR
 - Black mold remediation
-- Wildland firefighter training and certification
 - Riverwatch training
 - Inquiry-based science education experience
 
@@ -286,7 +285,6 @@ Pacific City, Oregon, USA
 503-664-0546 (text preferred)  
 eog@ernestofgaia.xyz  
 YouTube: @ErnestOfGaia  
-Discord: ernest_of_gaia
 
 ### Professional Summary
 
@@ -308,7 +306,7 @@ Experienced kitchen team member, hospitality worker, educator, and systems-minde
 
 **Pelican Brewing Company - Pacific City, OR**  
 **Kitchen Team Member / Line Cook**  
-**2022 or 2023 - Present**
+**2022 - Present**
 - Support daily service in a high-volume kitchen
 - Maintain cleanliness, organization, and food safety standards
 - Deliver reliable team support during fast-paced shifts
@@ -353,21 +351,3 @@ Permaculture Design Certification
 - First Aid and CPR background
 - Conversational Spanish
 
-## Notes for Future Use
-
-This master draft was consolidated from the following project files that were readable in the project:
-
-- Pelican Brewpub Resume.docx
-- A brief history of my hospitality and food experience.docx
-- Professional Bio.docx
-- Untitled document.docx
-- ResumeCoverLetter.doc.docx
-- Milk Road Resume Draft.docx
-- Resume_ErnestRando_2009_Natualist.doc.docx
-- Pelican Brewery Full Resume & Cover Letter.docx
-- Nate Hagens Resume Letter.docx
-- NetNada Resume Letter.docx
-- Basic Resume Letter.docx
-- Climate Works Resume_ Ernest Rando.docx
-
-This version removes most job-specific wording, duplicate passages, outdated addresses, and long link-heavy narrative sections in favor of a cleaner all-purpose working draft.

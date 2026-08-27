@@ -32,6 +32,5 @@ last-tagged: 2026-04-15
 ## Tools & Stack
 - Remote coordination tools (Discord, Google Docs)
 - First Aid / CPR training
-- Black mold remediation certification
-- Wildland firefighter training and certification
+- Black mold remediation training
 - Riverwatch training

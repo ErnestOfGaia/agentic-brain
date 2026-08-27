@@ -38,7 +38,7 @@ Before we meet, please think through these questions. Your answers help me tailo
 
 2. **Have you noticed AI features in any of your existing tools, or is this the first time you're thinking about it?** — This helps me know whether to start with "here's what you already have" or "here's what's available."
 
-3. **What's one specific task or workflow in your role that feels repetitive or time-consuming?** — This is where we often find the quickest wins with AI.
+3. **What's one specific task or workflow in your role that feels repetitive or time-consuming?** — That's the most likely place to find a quick win.
 
 4. **Does your business rely on your web presence (website, social media, email marketing, online reputation)?** — This shapes whether we prioritize content creation, SEO, or customer-facing AI tools.
 
@@ -53,17 +53,6 @@ Before we meet, please think through these questions. Your answers help me tailo
 9. **Is there an AI topic or use case you've been curious about but didn't know who to ask?** — Sometimes the best starting point is the question that's been nagging at you.
 
 ---
-**These questions are designed to:**
 
-- **Assess current state** — what tools they have, what they know, what concerns them
-- **Identify quick wins** — the repetitive task or workflow where AI could help immediately
-- **Understand constraints** — budget, team scope, business model (web-dependent vs. not)
-- **Surface real objections** — cost, security, job displacement—the things actually keeping them awake
-- **Define success** — what does "better" look like for them in 3 months
-- **Uncover latent curiosity** — the question they've been afraid to ask
-
-Each question includes a brief note explaining _why_ you're asking it, so if you adapt this for different contexts (email, landing page, etc.), you understand the purpose behind each one.
-
-------------------------
-my agents need to know this information
-**ernestofgaia.xyz**
+There are no wrong answers here, and you don't need to have thought it all through. Whatever you bring
+is where we start.
