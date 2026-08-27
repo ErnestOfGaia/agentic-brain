@@ -10,7 +10,8 @@ embedded or served.
 > serving them.
 
 Measured against today's live store: re-running the ingest after merging, without deleting anything,
-would leave **201 of 205 chunks holding their old text**. That is not a partial fix; it is no fix.
+would leave **201 of 220 chunks holding their old text**, plus 177 orphans from files that no longer
+exist. That is not a partial fix; it is no fix.
 
 ---
 
@@ -18,10 +19,10 @@ would leave **201 of 205 chunks holding their old text**. That is not a partial 
 
 | Question | Decision | Why |
 |---|---|---|
-| Delete 360 chunks surgically, or rebuild the store from empty? | **Rebuild from empty** | The surgical path saves ~45 seconds of embedding and buys back every hand-editing risk. A store built from an empty map cannot contain an orphan by construction. Only 19 of 205 chunks would have survived anyway. |
+| Delete 360 chunks surgically, or rebuild the store from empty? | **Rebuild from empty** | The surgical path saves ~45 seconds of embedding and buys back every hand-editing risk. A store built from an empty map cannot contain an orphan by construction. Only 19 of 220 chunks would have survived anyway. |
 | `rm brain.json` and restart, or build to the side and swap? | **Build to the side, then swap** | `rm` + restart serves a *growing partial store* to real visitors for ~8 minutes. Retrieval has no minimum-similarity floor, so a partial store answers **confidently** from whatever few chunks are nearest — worse than serving the old one. |
 | Build on the laptop and upload, or on the VPS? | **On the VPS, staging directory** | Same guarantee, no upload over a weak uplink, and the artifact is built by the same OS, git and Node that production uses. |
-| Hard-code the expected chunk count as a gate? | **No — derive it** | A "202 chunks" gate was proposed from a Windows working tree where `core.autocrlf` had rewritten every file to CRLF. The chunker splits paragraphs on `/\n\n+/`, which does not match `\r\n\r\n`, so CRLF text under-splits. The container clones raw LF and produces **205**. A hard-coded gate would have failed a correct build. `survey-brain.js` re-chunks the corpus instead, so the number never has to be typed. |
+| Hard-code the expected chunk count as a gate? | **No — derive it** | A "202 chunks" gate was proposed from a Windows working tree where `core.autocrlf` had rewritten every file to CRLF. The chunker splits paragraphs on `/\n\n+/`, which does not match `\r\n\r\n`, so CRLF text under-splits. The container clones raw LF and produces more. A hard-coded gate would have failed a correct build. `survey-brain.js` re-chunks the corpus instead, so the number never has to be typed. |
 | Restart mastra afterwards? | **Not required; verify instead** | `searchKnowledgeTool` re-reads `brain.json` when its mtime changes. A restart *during* an ingest can start a second one. |
 
 ## Do not
@@ -54,7 +55,7 @@ git fetch origin && git ls-tree -r -z --name-only origin/main | tr '\0' '\n' | g
 ```
 
 `-z` matters: without it git quotes the em-dash filenames and a naive count is wrong. Expect the
-post-sweep file count (**18**). If it prints 27 or 28 the merge did not land — stop.
+post-sweep file count (**19**). If it prints 27 or 28 the merge did not land — stop.
 
 ---
 
@@ -156,7 +157,7 @@ Takes ~8 minutes (batches of 10, 22s apart, free-tier rate).
 
 **C3. 🚦 GATE — read the log, not just the exit code.**
 
-- `Found 18 markdown files` — a different number means the wrong corpus.
+- `Found 19 markdown files` — a different number means the wrong corpus.
 - **Any line containing `WARNING`** is a stop. In particular `WARNING: git pull failed … Continuing
   with the cached copy` means it ingested a stale checkout. On a first run staging has no cache so a
   clone failure is loud — but **after any retry the cache exists**, and that fallback is live again.

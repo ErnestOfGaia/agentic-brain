@@ -25,8 +25,7 @@ agentic-brain/
 │   └── roles/           # One file per role (structured YAML + narrative)
 ├── router/              # Router agent context: the live site's own record
 │   └── projects-wiki/   # High-level project status for each active site
-└── secretary/           # (empty) — needs a scheduling/booking doc; the infra
-                         #   runbooks that were here are internal, not corpus
+└── secretary/           # Secretary agent context: booking and scheduling
 ```
 
 ---
@@ -71,8 +70,8 @@ last-tagged: YYYY-MM-DD
 | `recruiter/roles/` | 5 |
 | `router/` | 1 |
 | `router/projects-wiki/` | 2 |
-| `secretary/` | 0 |
-| **Total** | **17** |
+| `secretary/` | 1 |
+| **Total** | **18** |
 
 ---
 
