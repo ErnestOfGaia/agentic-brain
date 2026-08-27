@@ -14,11 +14,6 @@ topics:
 agenticbrain: true
 agent-role: [marketing, router]
 last-tagged: 2026-04-15
-todo: |-
-  need to factor in travel costs - for anyone over an hour away I may defer travel costs if an online meetings is done first
-  need to update session names with plant or animal species (native to oregon) names, 
-  need to estimate approximate travel times per region in Regional Notes:,
-  need to update the home page to reflect more of a pitch to open the eogbook, send a text message, or chat with an agent.
 ---
 
 # AI Coaching & Tutoring Business — Pricing Tiers & Plans
@@ -32,16 +27,11 @@ todo: |-
 
 ## Oregon Market Context
 
-| Metric | Data |
-|---|---|
-| Oregon median household income (2024) | $83,011 — above national avg of $80,734 |
-| Portland / West Coast AI consulting rates | $150–$400/hr (agency/enterprise) |
-| Your coaching rates | $75–$110/session (accessible, personal) |
-| Small biz AI spend growth (2025) | ~36% YoY increase nationally |
-| Oregon unemployment rate (2024) | 3.9% (white), 5.5% (Black), 5.2% (Hispanic/Latino) |
+Rates are calibrated to the Oregon market — **$75–$110 per session** — and positioned as accessible
+and personal rather than agency-priced.
 
 **Regional notes:**
-- **Astoria / Oregon Coast** — Small tourism, fishing, retail, and hospitality businesses. Price-sensitive, community-oriented. Oregon Coast SBDC has run AI workshops at $25/2hr group session — your 1-on-1 coaching must feel meaningfully more personal and transformational.
+- **Astoria / Oregon Coast** — Small tourism, fishing, retail, and hospitality businesses. Price-sensitive and community-oriented; 1-on-1 coaching has to feel meaningfully more personal than a group workshop.
 - **Salem** — Government, healthcare, logistics, mid-size service businesses. Mid-range budgets, strong appetite for workflow efficiency.
 - **Portland metro** — Tech-forward, creative agencies, professional services, nonprofits, startups. Most competitive market; clients compare against agency retainers.
 
@@ -162,57 +152,28 @@ Pay-as-you-go is always available: book single sessions with no commitment. The 
 
 ### Plan comparison
 
-| Plan | Duration | Sessions | Frequency | Discount | Nonprofit sessions earned |
-|---|---|---|---|---|---|
-| Pay-as-you-go | — | As booked | Flexible | None | Hours still count |
-| Habit | 3 months | 12 | Typically weekly | None | 1 |
-| Rhythm | 6 months | 24 | Typically weekly | 5% | 2 |
-| Craft | 9 months | 36 | Typically weekly | 10% | 3 |
+| Plan | Duration | Cadence | Discount | Nonprofit sessions earned |
+|---|---|---|---|---|
+| Pay-as-you-go | — | Flexible, the client sets it | None | Hours still count |
+| Habit | 3 months | Typically weekly | None | 1 |
+| Rhythm | 6 months | Typically weekly | 5% | 2 |
+| Craft | 9 months | Typically weekly | 10% | 3 |
+
+Cadence is agreed at the free call. Weekly is typical, but the right rhythm is the one the client will
+actually keep.
 
 ---
 
-### Habit Plan — 3 Months
+### What each plan is for
 
-**Best for:** Clients wanting quick, measurable wins. Testing AI before committing long-term.
+- **Habit — 3 months.** A first commitment: room to test coaching properly before committing longer.
+- **Rhythm — 6 months.** Long enough to build, test and refine real workflows, not just learn tools. 5% discount applied.
+- **Craft — 9 months.** Business-wide integration, and the largest nonprofit giveback (3 sessions). 10% discount applied.
 
-| Tier | Sessions | Rate | Total |
-|---|---|---|---|
-| Foundations | 12 | $75 | **$900** |
-| The Builder | 12 | $110 | **$1,320** |
-
-**What clients achieve in 3 months:**
-- Foundations: Comfortable with Claude and ChatGPT, first custom prompts written, basic content workflow running
-- The Builder: Prompt library built, 2–3 recurring workflows automated, Claude Project configured for their business
-
----
-
-### Rhythm Plan — 6 Months
-
-**Best for:** Serious business transformation. Enough time to build, test, and refine real systems. 5% discount applied.
-
-| Tier | Sessions | Rate (after 5% off) | Total |
-|---|---|---|---|
-| Foundations | 24 | $71.25 | **$1,710** |
-| The Builder | 24 | $104.50 | **$2,508** |
-
-**What clients achieve in 6 months:**
-- Foundations: Full AI toolkit in daily use, training 1–2 staff members, content workflow producing consistently
-- The Builder: Full content pipeline live, Notion/Google Workspace integrated, custom GPT or Claude Project serving multiple business functions
-
----
-
-### Craft Plan — 9 Months
-
-**Best for:** Full business-wide AI integration. Nonprofit giveback maximized (3 sessions). 10% discount applied.
-
-| Tier | Sessions | Rate (after 10% off) | Total |
-|---|---|---|---|
-| Foundations | 36 | $67.50 | **$2,430** |
-| The Builder | 36 | $99 | **$3,564** |
-
-**What clients achieve in 9 months:**
-- Foundations: AI-confident, independently building new workflows, potential upgrade to The Builder tier
-- The Builder: Agency-grade prompt library, team AI policy written, training colleagues independently
+Published pricing is **$75 / 60 min** (Foundations), **$110 / 75 min** (The Builder), and the **5%** and
+**10%** plan discounts. No other pricing figures are published — plan session counts, plan totals and
+per-month cost estimates are internal planning arithmetic and live in the vault, because this document
+is retrieved and quoted verbatim by the customer-facing agents.
 
 ---
 
@@ -264,21 +225,21 @@ Each client gets their own Project with:
 ### Naming convention
 ```
 [TIER] — [Client First Name] — [Business Type]
-e.g. "Builder — Maria — Coastal Bakery"
-     "Foundations — Sam — Astoria Retail"
 ```
 
 ---
 
 ## Competitive Positioning
 
-| Service type | Typical rate | Your advantage |
-|---|---|---|
-| Oregon Coast SBDC group workshops | $25/2hr group | You: 1-on-1, ongoing, personalized |
-| National AI coaching platforms | $150–$300/session | You: Oregon-rooted, community giveback |
-| Portland AI agencies (retainer) | $2,000–$10,000/month | You: accessible entry point, human relationship |
-| Junior AI consultant (hourly) | $100–$150/hr | You: coaching model = transformation not just hours |
-| Online courses (self-paced) | $0–$500 one-time | You: accountability, customization, local context |
+What distinguishes this offer, by the kind of alternative a buyer is weighing:
+
+| Alternative | What this offers instead |
+|---|---|
+| Group workshops through a local business-development body | 1-on-1, ongoing, personalized to one business |
+| National AI coaching platforms | Oregon-rooted, with a community giveback |
+| Agency retainers | An accessible entry point and a human relationship |
+| Hourly AI consulting | A coaching model — building capability, not billing hours |
+| Self-paced online courses | Accountability, customization, and local context |
 
 ---
 
