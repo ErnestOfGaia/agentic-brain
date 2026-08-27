@@ -106,25 +106,28 @@ const DRAFT_MARKER  = /_\[(?:add|to )|\btodo\s*=|\bacme[-\s]?corp\b|\bTBD\b/gi;
 // re-read by agents for months.
 const STALE_STATUS  = /\bweek\s+\d+\s*[-–]\s*\d+\b|\bspring sprint\b|\bcurrently a stub\b|\bstubbed\b/gi;
 
-// ─── Scan scope must equal ingest scope ─────────────────────────────────────
-// The ingest embeds README.md plus the five agent folders. `.github/` and
-// `scripts/` are repo machinery: never embedded, never retrieved, never served
-// to a visitor. The rules above are all about what an agent can say out loud,
-// so they cannot apply to a file no agent can ever read.
+// ─── Scan scope must MIRROR ingest scope ────────────────────────────────────
+// This must match ingest-brain.mjs > walkMarkdown() exactly, and that function
+// has one exclusion rule: `if (entry.startsWith('.')) continue`. Everything
+// else that ends in .md is embedded and can be served to a visitor.
 //
-// This matters for more than tidiness. The corpus audit lives in `.github/`
-// precisely because an audit trail and a served corpus must be two different
-// places — and an audit necessarily quotes the hazards it found. Without this
-// skip, the only ways to keep that record in the repo are to fail CI forever or
-// to bury it in allow markers, and a marker that exists to preserve a quoted
-// violation is the failure mode this guard was written to catch.
-const NOT_INGESTED = new Set(['.github', 'scripts']);
-
+// So the guard skips dot-prefixed entries and nothing else. In particular it
+// does NOT special-case `scripts/`: that directory is outside the corpus today
+// only because it happens to contain no markdown. The moment a .md lands there
+// the ingest WILL embed it, and a guard that had hardcoded `scripts` as
+// not-ingested would wave it through. Mirroring the ingest's own rule keeps the
+// two in step without anyone having to remember.
+//
+// The corpus audit lives in `.github/` precisely because an audit trail and a
+// served corpus must be two different places — and an audit necessarily quotes
+// the hazards it found. `.github/` is dot-prefixed, so both the ingest and this
+// guard skip it for the same structural reason, not by special pleading.
+//
+// If the ingest's exclusion rule ever changes, change this with it.
 function walk(dir) {
   const out = [];
   for (const name of readdirSync(dir)) {
-    if (name === '.git' || name === 'node_modules') continue;
-    if (dir === ROOT && NOT_INGESTED.has(name)) continue;
+    if (name.startsWith('.') || name === 'node_modules') continue;
     const full = path.join(dir, name);
     if (statSync(full).isDirectory()) out.push(...walk(full));
     else if (name.endsWith('.md')) out.push(full);

@@ -200,7 +200,6 @@ This makes Ernest unusually comfortable for hospitality and mission-driven roles
 - First Aid
 - CPR
 - Black mold remediation
-- Wildland firefighter training and certification
 - Riverwatch training
 - Inquiry-based science education experience
 
