@@ -135,8 +135,9 @@ Once you decide on a tier, you can book sessions as you go, or lock in a plan an
 | **Rhythm** | 6 months | Weekly | 5% off | 2 nonprofit sessions |
 | **Craft** | 9 months | Weekly | 10% off | 3 nonprofit sessions |
 
-Cadence is set together at the free call. The plans are built around a weekly rhythm, but the right one is what you'll
-actually keep. Start pay-as-you-go and move to a plan whenever you like.
+The plans are built around a weekly session, because a habit has to repeat on a short cycle before it
+holds. We set your cadence together at the free call, and an interval you'll actually keep beats one
+that looks better on paper. Start pay-as-you-go and move to a plan whenever you like.
 
 Published pricing is **$75 / 60 min**, **$110 / 75 min**, and the **5%** and **10%** plan savings. No
 other pricing figures are published; the table above matches `/begin-learning/services/plans` exactly.

@@ -159,8 +159,9 @@ Pay-as-you-go is always available: book single sessions with no commitment. The 
 | Rhythm | 6 months | Weekly | 5% | 2 |
 | Craft | 9 months | Weekly | 10% | 3 |
 
-Cadence is agreed at the free call. The plans are built around a weekly rhythm, but the right one is what the client will
-actually keep.
+The plans are built around a weekly session, because a habit has to repeat on a short cycle before it
+holds. Cadence is still agreed at the free call: an interval the client will actually keep beats one
+that looks better on paper.
 
 ---
 

@@ -87,8 +87,9 @@ and I'd rather you reschedule than sit through a session you can't focus on.
 
 ## How often we meet
 
-We agree the rhythm together on the free call. The plans are built around a weekly session, but the right
-cadence is the one you'll actually keep.
+The plans are built around a weekly session, because a habit has to repeat on a short cycle before it
+holds. We agree your rhythm together on the free call, and an interval you'll actually keep beats one
+that looks better on paper.
 
 You can book single sessions as you go with no commitment at all. If you'd rather lock in a longer
 arrangement, there are three plans:
