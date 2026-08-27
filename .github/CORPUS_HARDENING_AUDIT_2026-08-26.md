@@ -386,10 +386,12 @@ vault — these were exports, not originals.
   neither served the scheduling role the agent actually has. The agent is not left contextless — six
   other files are tagged for it and carry contact routes, tiers, booking flow and the giveback. A
   purpose-built scheduling doc is content for Ernest to write, not for me to invent.
-- **The wildland firefighter certification** is left exactly as written. The black-mold entry was
-  internally inconsistent in one file (training in one line, certification in another) so it was made
-  consistent as training; the firefighter claim is consistent everywhere and may well be accurate.
-  Worth Ernest confirming both.
+- **The wildland firefighter certification is REMOVED** (2026-08-27). Ernest confirmed the
+  certification has lapsed and the training was ~20 years ago. It was also mis-filed: a ~2006
+  credential sitting under a role dated "2017 – present". **`Riverwatch training` is in the same
+  undated list and may have the same problem — flagged, not touched.** Separately, the black-mold
+  entry was internally inconsistent in one file (training in one line, certification in another)
+  and was made consistent as training.
 - **`orchard.` and `mobile.` are no longer advertised**, but they are still unconfigured on the VPS.
   Fixing that is a proxy change, not a corpus change.
 - **The four 404 routes** (F26) are a site issue, not a corpus issue, now that the file naming them
