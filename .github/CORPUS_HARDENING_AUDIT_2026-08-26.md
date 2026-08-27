@@ -1,5 +1,6 @@
 # Corpus-wide hardening audit — agentic-brain
-**Date:** 2026-08-26 · **Scope:** every ingested source in the repo · **Status:** findings only; only Stage 1 fixes are applied in this PR
+**Date:** 2026-08-26 · **Scope:** every ingested source in the repo
+**Status:** 29 findings; all six remediation stages applied on this branch (§7). Not merged.
 
 > **Why this file lives in `.github/`.** `.github/` and `scripts/` are not ingested. An audit trail
 > and a served corpus must be two different places — that is the whole finding of the 2026-07-29
@@ -25,6 +26,11 @@ never implemented** (F1).
 ---
 
 ## 1. Method
+
+> **Correction (added on the second pass).** This section originally claimed all 27 ingested files
+> were read in full. It was **26** — `business-dna/EOGbook_Project_Summary.md` was missed. Reading it
+> produced three further findings, two of them HIGH (F25, F26, F28). Recorded here rather than quietly
+> fixed, because "I read everything" is exactly the kind of claim this audit exists to distrust.
 
 - Read all 27 ingested markdown files in full (`README.md`, `business-dna/`, `marketing/`,
   `recruiter/`, `router/`, `secretary/`). No sampling.
@@ -67,6 +73,11 @@ untrue, unpublished, private, or embarrassing?*
 | F22 | **Medium** | `router/*`, `marketing/marketing-content-pipeline.md` | multiple | Stale status served as current ("Week 1–3 of Spring Sprint") |
 | F23 | **Low** | `router/resume…Phase 1.md` | 143 | `2024-acme-corp-ai-engineer.md` placeholder role |
 | F24 | **Low** | `recruiter/…master_draft.md` | 23, 289 | Discord handle — a contact channel outside the published hierarchy |
+| F25 | **High** | `business-dna/EOGbook_Project_Summary.md` | 48, 166 | The site's own IA specifies a page holding "3–5 client quotes" |
+| F26 | **High** | `business-dna/EOGbook_Project_Summary.md` | 121–142 | A ~20-route navigation tree; **4 of 12 sampled routes 404** |
+| F27 | **Medium** | `business-dna/EOGbook_Project_Summary.md` | 281, 293, 299, 306 | Local filesystem paths ×4 |
+| F28 | **High** | `business-dna/EOGbook_Project_Summary.md` | 302–312 | An embedded system-prompt block: *"You are implementing… Do not deviate."* |
+| F29 | **Medium** | `scripts/content-guard.mjs` | — | Scan scope ≠ ingest scope *(see §6.4)* |
 
 ---
 
@@ -219,6 +230,38 @@ Note the structural point: `marketing/Australia Market Research — Sydney Penri
 a Sources section (96–103). The same statistics appear un-sourced in two *other* files. **The
 citation lives in a different file from the claim, so it never travels with the chunk.**
 
+### F25 / F26 / F28 — the file the first pass missed *(High)*
+
+`business-dna/EOGbook_Project_Summary.md` is the build spec for the site's information architecture.
+It is a third pasted-artifact file, and it carries three distinct hazards:
+
+**F25 — testimonials specified as a deliverable.** Line 48 defines page 6 as *"Trust & FAQs |
+Testimonials + objection handling | **3–5 client quotes**, 8 FAQs"*, and line 166 budgets
+*"Testimonials (3–5) | Page 6 | 300–500"* words. The corpus elsewhere states correctly that there are
+none. Here the site's own blueprint says a page exists to hold them.
+
+**F26 — a navigation tree that partly 404s.** Lines 121–142 document ~20 `/eogbook/…` routes, while
+line 22 notes routes actually live under `/begin-learning`. Verified rather than assumed, because the
+obvious guess was wrong: the redirect layer *does* cover the rename, so most top-level pages resolve.
+Of 12 routes sampled, **4 return 404 after redirects**:
+
+| Route | Final |
+|---|---|
+| `/eogbook/who-is-ernest/origin-story` | **404** |
+| `/eogbook/what-i-do/plain-english` | **404** |
+| `/eogbook/giveback/overview` | **404** |
+| `/eogbook/trust-faqs` | **404** |
+| the other 8 sampled | 200 |
+
+An agent asked *"where can I read Ernest's origin story?"* hands the visitor a dead link. Note that
+the one page named in F25 — the testimonials page — is among the four that do not exist.
+
+**F28 — an embedded system prompt.** Lines 302–312 contain a complete instruction block in the second
+person: *"You are implementing EOGbook… Read the complete specification at… Then implement it exactly
+as specified. Do not deviate."* Of every hazard in this repo this is the one most likely to change a
+serving model's behaviour rather than just its output, because it is shaped like a system prompt and
+sits in a corpus that gets retrieved into one.
+
 ---
 
 ## 4. `content-guard: allow` markers — all six enumerated
@@ -277,9 +320,15 @@ plainly, because they explain why a green run means less than it looks:
    `FABRICATED_STAT` active on it. Line 344 is exactly that case.
 2. **The rules match phrasings, and phrasings are unbounded.** F2 and F5 are the same claims the
    guard was written for, reworded. Regex hardening will always trail the drafting.
-3. **Whole categories are unmodelled**: unpublished pricing (F1, F3, F12), unsourced statistics
-   (F11), third-party names in private contexts (F7), infrastructure disclosure (F8), pasted AI
-   transcripts (F6), stale status (F22), and dead links (F9).
+3. **Whole categories were unmodelled** — *six of them now are, as of Stage 6.* Unpublished pricing
+   (F1, F3, F12), infrastructure disclosure (F8), local paths and secret names, operator-voice text
+   (F6, F28), draft scaffolding beyond the narrow rule (F14), and sprint-relative status (F22) are
+   now matched **by shape, not by value** — no withdrawn figure is written into the guard, because
+   detecting a price by hardcoding it would put the price back in the repo.
+
+   Still unmodelled, and probably unmodellable by regex: unsourced statistics (F11), third-party
+   names in a private context (F7), and dead links (F9, F26). Those need a human or a fetch, which
+   is why §5 exists.
 4. **The scan scope did not match the ingest scope** — *fixed in this PR (F25).* `walk()` collected
    every `.md` in the repo, including `.github/` and `scripts/`, which are never embedded and never
    served. This surfaced the moment this audit was written: the guard raised 10 violations against
@@ -305,20 +354,59 @@ question about paths, not about text.
 
 ---
 
-## 7. Recommended sequencing (Ernest's call)
+## 7. Resolution log
 
-Grouped so each stage is independently reviewable. **Nothing beyond Stage 1 is done in this PR.**
+All six stages are applied on this branch, one commit each, in the order below. Everything is
+reviewable per-commit; nothing is merged.
 
-- **Stage 1 — served-corpus falsehoods (this PR):** F3, F4. Surgical; no record lost.
-- **Stage 2 — pricing and outcomes:** F1, F2, F12. Delete the session-count tables and the
-  "What clients achieve" blocks; move them to the vault. Highest visitor impact.
-- **Stage 3 — evict what isn't corpus:** F6, F7, F8, F10, F21, F22. These are *path* decisions —
-  they don't need rewriting, they need to not be ingested.
-- **Stage 4 — sourcing and scaffolding:** F11, F13, F14, F15, F16, F20, F23.
-- **Stage 5 — infrastructure truth:** F9, F19, and the stale repo URL. Either configure
-  `orchard`/`mobile` in NPM or stop advertising them.
-- **Stage 6 — guard changes, last.** Deliberately last: rules written *after* the corpus is clean
-  encode the real invariants instead of chasing today's phrasings.
+| Stage | Findings | Outcome |
+|---|---|---|
+| 1 | F3, F4 | Both removal notices rewritten; the quoted fabrications and unpublished monthly figures are gone. Ledger verified to hold them. |
+| 2 | F1, F2, F5, F11, F13, F16 | Session-count tables and plan totals deleted; "What clients achieve" ×3 deleted; the timeline claim and the "Real Impact" block rewritten; competitor rate tables made qualitative. |
+| 3 | F6, F7, F8, F10, F18, F20, F21, F24, F25, F26, F27, F28 | 8 files evicted, each verified to have a vault home first. Section-level removals for the job-application targets and the internal playbook. |
+| 4/5 | F9, F12, F14, F15, F19, F22, F23 | Australia files evicted; 20 placeholders removed; dead links dropped; sprint-relative status replaced with what is true now. |
+| 6 | F29 + the six unmodelled categories | Scan scope fixed; six shape-based rules added. |
+
+**Corpus went from 27 files to 17.** Nothing was deleted without first confirming the original in the
+vault — these were exports, not originals.
+
+### What deliberately was *not* changed
+
+- **`secretary/` is now empty.** Its two files were an internal runbook and a server inventory;
+  neither served the scheduling role the agent actually has. The agent is not left contextless — six
+  other files are tagged for it and carry contact routes, tiers, booking flow and the giveback. A
+  purpose-built scheduling doc is content for Ernest to write, not for me to invent.
+- **The wildland firefighter certification** is left exactly as written. The black-mold entry was
+  internally inconsistent in one file (training in one line, certification in another) so it was made
+  consistent as training; the firefighter claim is consistent everywhere and may well be accurate.
+  Worth Ernest confirming both.
+- **`orchard.` and `mobile.` are no longer advertised**, but they are still unconfigured on the VPS.
+  Fixing that is a proxy change, not a corpus change.
+- **The four 404 routes** (F26) are a site issue, not a corpus issue, now that the file naming them
+  is gone.
+
+### Verification of the finished state
+
+A 12-category regression sweep — fabricated stats, plan pricing, market stats, AU pricing, outcome
+claims, infra pointers, local paths, private job targets, scaffolding, allow markers, dead
+subdomains, stale status — run against both trees:
+
+| Tree | Result |
+|---|---|
+| pre-sweep `main` | **12 of 12 categories detect a hazard** |
+| this branch | **12 of 12 clean** |
+
+And the hardened guard itself, run against both:
+
+| Tree | `content-guard` |
+|---|---|
+| this branch | **0 violations** |
+| pre-sweep `main` | **88 violations** — 23 draft-marker, 20 stale-status, 18 infrastructure-detail, 13 internal-path, 10 unpublished-pricing, 4 operator-voice |
+
+One detail in that second row is worth reading twice. `track-record`, `fabricated-metric` and
+`placeholder-scaffolding` do **not** appear in the `main` results — not because those lines were
+clean, but because they carried allow markers. On the corpus that was serving fabricated statistics
+to visitors, the three rules written specifically to catch them were switched off.
 
 ---
 
