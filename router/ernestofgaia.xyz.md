@@ -12,7 +12,6 @@ tags:
 topics:
   - service-offering
   - project-brief
-  - infrastructure
 agenticbrain: true
 agent-role: [router, marketing, secretary, recruiter]
 last-tagged: 2026-04-15
@@ -20,12 +19,9 @@ last-tagged: 2026-04-15
 
 # ernestofgaia.xyz — Main AI Coaching Website
 
-**Status:** Active development (Spring Sprint)
-**GitHub:** https://github.com/ErnestOfGaia/ai-tutoring-website 
+**Status:** Live in production
 **Live URL:** https://ernestofgaia.xyz
-**Stack:**
-**CI/CD:** GitHub Actions → GHCR (ghcr.io/ernestofgaia:latest) → VPS pull on push to `main`
-Resource Documentation in Claude Desktop AI Coaching Projects
+**Coaching content:** https://ernestofgaia.xyz/begin-learning
 
 ---
 
@@ -46,11 +42,9 @@ Primary public-facing website for Ernest Of Gaia — AI coaching and tutoring se
 
 ## Notes
 
-- Old MVP lives at https://mvp.ernestofgaia.xyz (not searchable, kept for reference)
-- Obsidian vault connected to Claude via `.claude` folder for session continuity
-- Reference materials for AI coaching content in Claude Desktop project "ai coaching project"
-- Node.js 24 migration in GitHub Actions required before June 2, 2026
+- The published coaching content lives under `/begin-learning` — services, plans, how it works, the giveback, and the FAQs.
+- An earlier version of the site is still reachable at mvp.ernestofgaia.xyz. It is superseded and not the place to send anyone.
 
 ---
 
-*Source of truth for this domain. Update here when making significant changes to the repo or deployment.*
+*The live site is canonical. If this file and ernestofgaia.xyz disagree, the site is right.*

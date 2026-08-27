@@ -72,6 +72,40 @@ const FABRICATED_STAT = /\b\d+\+\s*clients\b|\b\d{1,3}\s?%\s+of\s+(?:clients|stu
 // "(To Add)" list, or a "Testimonial N Placeholder" heading.
 const SCAFFOLDING     = /["“]\s*\[[^\]]{5,}\]|\(To Add\)|Testimonial\s+\d+\s+Placeholder|\bLorem ipsum\b/gi;
 
+// ─── Added 2026-08-26 — the categories the phrasing rules structurally miss ──
+// The corpus-wide sweep found that a clean run proved very little. This guard
+// was green against a corpus that still held unpublished plan pricing, an
+// internal server runbook, a pasted transcript from another assistant, and the
+// names of places Ernest had applied for work. Those are not phrasings — they
+// are KINDS of content, so they are matched by shape below.
+//
+// Deliberately no literal values. Writing a withdrawn price into this file in
+// order to detect that price would put the number back in the repo, which is
+// the exact trap the sweep was about.
+
+// Published prices are per-session and two or three digits. A four-figure sum
+// in the corpus is a plan total, a project quote, or someone else's rate card.
+const LARGE_SUM     = /\$\s?\d{1,3},\d{3}\b|\$\s?\d{4,}\b/g;
+
+// Machine-local paths, server-side paths, and the names of secrets. No value
+// needs to leak for this to be a map of where to look.
+const INTERNAL_PATH = /[A-Za-z]:\\Users\\|(?:^|[\s(`])\/root\/|\.env(?:\.local)?\b|\b\w*_(?:API_KEY|SECRET|TOKEN)\b/g;
+
+// Host, OS and port inventory: reconnaissance value to a stranger, no value to
+// a visitor asking about coaching.
+const INFRA_DETAIL  = /\b(?:hostinger|digitalocean|linode|vultr)\b|\bubuntu\s+\d\d\.\d\d\b|\bport\s+\d{4}\b/gi;
+
+// Text addressed to an operator instead of describing the business. A retrieved
+// chunk of it can steer the serving model rather than inform the visitor.
+const OPERATOR_VOICE = /\b(?:would you like me to|shall i (?:build|create|start)|feel free to answer|do not deviate)\b/gi;
+
+// Draft scaffolding shapes that the narrower SCAFFOLDING rule does not reach.
+const DRAFT_MARKER  = /_\[(?:add|to )|\btodo\s*=|\bacme[-\s]?corp\b|\bTBD\b/gi;
+
+// Sprint-relative status. "Week 2" is true for about a week, and this corpus is
+// re-read by agents for months.
+const STALE_STATUS  = /\bweek\s+\d+\s*[-–]\s*\d+\b|\bspring sprint\b|\bcurrently a stub\b|\bstubbed\b/gi;
+
 // ─── Scan scope must equal ingest scope ─────────────────────────────────────
 // The ingest embeds README.md plus the five agent folders. `.github/` and
 // `scripts/` are repo machinery: never embedded, never retrieved, never served
@@ -142,9 +176,35 @@ for (const file of walk(ROOT)) {
       flag(file, lineNo, line, 'placeholder-scaffolding',
            'draft scaffolding in a retrieval corpus — a chunk can be served without its heading; keep placeholders in the vault');
     }
+    if (LARGE_SUM.test(line)) {
+      flag(file, lineNo, line, 'unpublished-pricing',
+           'a four-figure sum — published pricing is per-session; plan totals and quotes are internal');
+    }
+    if (INTERNAL_PATH.test(line)) {
+      flag(file, lineNo, line, 'internal-path',
+           'a local/server path or the name of a secret — internal, and of no use to a visitor');
+    }
+    if (INFRA_DETAIL.test(line)) {
+      flag(file, lineNo, line, 'infrastructure-detail',
+           'host, OS or port inventory — reconnaissance value to a stranger, none to a visitor');
+    }
+    if (OPERATOR_VOICE.test(line)) {
+      flag(file, lineNo, line, 'operator-voice',
+           'text addressed to an operator, not describing the business — a retrieved chunk of it can steer the model');
+    }
+    if (DRAFT_MARKER.test(line)) {
+      flag(file, lineNo, line, 'draft-marker',
+           'draft scaffolding — the label does not survive chunking; keep it in the vault');
+    }
+    if (STALE_STATUS.test(line)) {
+      flag(file, lineNo, line, 'stale-status',
+           'sprint-relative status goes stale in days and is then served as current; state what is true now');
+    }
     // Reset lastIndex on the reused /g-with-.test() regexes.
     PERSONAL_EMAIL.lastIndex = GOOGLE_DOC_URL.lastIndex = ERNEST_HE.lastIndex = 0;
     TRACK_RECORD.lastIndex = FABRICATED_STAT.lastIndex = SCAFFOLDING.lastIndex = 0;
+    LARGE_SUM.lastIndex = INTERNAL_PATH.lastIndex = INFRA_DETAIL.lastIndex = 0;
+    OPERATOR_VOICE.lastIndex = DRAFT_MARKER.lastIndex = STALE_STATUS.lastIndex = 0;
   });
 }
 

@@ -17,15 +17,15 @@ last-tagged: 2026-04-15
 > Quarterly AI tool usage briefs and a multi-channel social media content strategy.
 
 ## Overview
-A systematic content operation that documents Ernest's actual AI tool usage each quarter and distributes it across Medium, LinkedIn, X/Twitter, and YouTube. The approach is practical and data-driven — "just the facts" quarterly reviews, not hype. The pipeline starts manual (Q1–Q2 2025) and will be progressively automated through Cowork tasks, n8n, and Apify.
+A systematic content operation that documents Ernest's actual AI tool usage each quarter and distributes it across Medium, LinkedIn, X/Twitter, and YouTube. The approach is practical and data-driven — "just the facts" quarterly reviews, not hype. The pipeline began manual and is being progressively automated.
 
 ## Status
-**Ongoing** — Q1–Q2 2025 briefs completed manually. Automation roadmap defined.
+**Ongoing** — briefs are produced each quarter. Automation roadmap defined.
 
 ## Goals
 - Publish quarterly AI tool usage briefs for each major tool in the stack
-- Build a content library that serves as proof-of-expertise for the coaching brand
-- Automate brief generation via Cowork tasks and Apify by Q3 2025
+- Build a public record of how these tools are actually used in practice
+- Automate brief generation via Cowork tasks and Apify
 - Distribute content across 4 channels with format-appropriate adaptations
 - Feed social content back into the ernestofgaia.xyz SEO/GEO layer
 
@@ -58,7 +58,7 @@ A systematic content operation that documents Ernest's actual AI tool usage each
 - **Publishing:** Manual → semi-automated
 
 ## Next Steps
-- Import Q1 2026 AI tool usage data into Obsidian
+- Import current-quarter AI tool usage data into Obsidian
 - Create Cowork task template for brief generation
-- Draft and publish Q1 2026 Claude Desktop usage brief
+- Draft and publish the next Claude Desktop usage brief
 - Set up n8n workflow for cross-channel distribution

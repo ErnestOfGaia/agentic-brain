@@ -20,7 +20,7 @@ last-tagged: 2026-04-15
 A service business built around Ernest of Gaia's positioning as a "Local A.I. Guide" — meeting non-technical clients where they are and helping them integrate AI tools into their everyday work and life. The brand draws on a nature-based, tradesperson aesthetic and targets the Oregon coast and Portland metro before expanding internationally to Western Sydney, Australia.
 
 ## Status
-**Active** — Pricing model locked, brand DNA defined. ernestofgaia.xyz is live in production (agent-powered site on the VPS).
+**Active** — pricing model locked, brand DNA defined, ernestofgaia.xyz live in production. No paying clients yet.
 
 ## Goals
 - Build a clientele of local small business owners, creators, and founders
@@ -49,7 +49,5 @@ There is no Tier 3. Coaching plans: Pay-as-you-go; Habit (3 months); Rhythm (6 m
 - **Website:** [ernestofgaia.xyz](https://ernestofgaia.xyz)
 
 ## Next Steps
-- Launch main site to unlock business card printing
-- Acquire first 3 Oregon coaching clients
-- Document client session outcomes for case studies
-- Begin Australia expansion planning post-visa approval
+- Acquire the first Oregon coaching clients
+- Print and place business cards along the Pacific City to Portland corridor

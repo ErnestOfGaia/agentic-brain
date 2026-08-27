@@ -20,7 +20,7 @@ Each agent draws from its own folder of context files. Files tagged `agenticbrai
 ```
 agentic-brain/
 ├── business-dna/        # Core brand identity — all agents reference this
-├── marketing/           # Marketer agent context: copy, pricing, market research
+├── marketing/           # Marketer agent context: copy, pricing, client-facing docs
 ├── recruiter/           # Recruiter agent context: resume, work history
 │   └── roles/           # One file per role (structured YAML + narrative)
 ├── router/              # Router agent context: the live site's own record
@@ -57,9 +57,7 @@ last-tagged: YYYY-MM-DD
 | `brand-voice` | Tone, copy style, messaging |
 | `workflow-guide` | SOPs, how-to, process docs |
 | `work-history` | Ernest's professional background |
-| `market-research` | Market data, feasibility, competitive analysis |
-| `infrastructure` | VPS, Docker, CI/CD, deployment |
-| `project-brief` | Specs and scope for active builds |
+| `project-brief` | Scope and status of a live, public-facing property |
 
 ---
 
@@ -68,13 +66,13 @@ last-tagged: YYYY-MM-DD
 | Folder | Files |
 |---|---|
 | `business-dna/` | 2 |
-| `marketing/` | 6 |
+| `marketing/` | 4 |
 | `recruiter/` | 3 |
 | `recruiter/roles/` | 5 |
 | `router/` | 1 |
 | `router/projects-wiki/` | 2 |
 | `secretary/` | 0 |
-| **Total** | **19** |
+| **Total** | **17** |
 
 ---
 

@@ -37,9 +37,6 @@ By the end of the session, you'll have a clear picture of where you're starting 
 ---
 
 ## Service Tiers
-(todo = 
-rename session names to popular oregon native birds,
-need to factor in travel costs - for anyone over an hour away I may defer travel costs if an online meetings is done first )
 
 | Tier       | Session Name             | Length | Rate           | Best For                                    |
 | ---------- | ------------------------ | ------ | -------------- | ------------------------------------------- |
@@ -82,7 +79,6 @@ Have a question before your session? Reach out anytime.
 | **Email**            | eog@ernestofgaia.xyz     |
 | **Website**          | ernestofgaia.xyz         |
 | Work History         | resume.ernestofgaia.xyz  |
-| Projects Orchard     | orchard.ernestofgaia.xyz |
 
 Text first — 503-664-0546 doesn't take voicemail. I respond within 48 hours.
 
