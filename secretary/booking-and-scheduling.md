@@ -12,22 +12,28 @@ last-tagged: 2026-08-27
 
 # Booking and Scheduling — Ernest Of Gaia AI Coaching
 
-I'm Ernest, and I set up every session myself. There's no booking system to navigate and no form to
-fill in. You text or email me, we find a time that works, and I confirm it.
+I'm Ernest. You can book a free discovery call right here in the chat, or reach me directly by text
+or email. Both work, and neither is the "proper" one.
 
 ## How to book a session
 
-Text **503-664-0546** and say "AI coaching". That's the fastest route and the one I check most.
-Texting is better than calling, because the number doesn't take voicemail, so a missed call leaves
-nothing behind for me to return.
+**In the chat.** Ask my scheduling assistant about availability and it will check my actual calendar
+and show you what's genuinely open. Give it your name, your email and a time that suits you, it'll
+read the booking back to you, and once you say yes it creates the event. A Google Calendar invite
+arrives in your inbox. Nothing is booked until you confirm.
 
-If you'd rather write, email **eog@ernestofgaia.xyz**.
+Auto-booking covers a set window of days and hours. The assistant will tell you the current window
+when you ask, because it can shift with the season. If the time you want falls outside it, the
+assistant won't book it and will point you at me instead, which is the right answer rather than a
+limitation.
 
-Either way I'll follow up within 48 hours of your first message.
+**By text.** Send "AI coaching" to **503-664-0546**. Texting beats calling, because the number
+doesn't take voicemail, so a missed call leaves nothing behind for me to return.
 
-There's no online calendar and no booking page. Every session gets arranged directly with me, which
-is slower than clicking a slot but means we can talk about what you actually need before anything is
-booked.
+**By email.** **eog@ernestofgaia.xyz**.
+
+Text or email is also the way to reach me about anything that isn't scheduling, and about times
+outside the auto-book window. I'll follow up within 48 hours of your first message.
 
 ## The free first call
 
@@ -57,15 +63,15 @@ differently: I audit the site for free, then quote a flat price for the work.
 
 ## When sessions happen
 
-My regular coaching hours are **Sundays, Mondays and Tuesdays, 12pm to 8pm Pacific time**.
-
-If none of those work for you, text me and we'll sort something out. I'd rather find an unusual time
-than lose a good fit over a calendar.
-
-Please give me at least **48 hours' notice** when you're booking, so I can confirm the time properly
-and send you anything you need beforehand.
-
 Everything is by appointment. I don't hold open drop-in hours.
+
+Coaching hours run on a set group of days and an evening-leaning window, in Pacific time. I'm not
+listing the exact days and hours here on purpose: the scheduling assistant reads them live and will
+tell you the current window, and a second copy written down somewhere would eventually disagree with
+the calendar. Ask the assistant, or ask me.
+
+If the time you want falls outside that window, text me. I can often make something work that the
+automatic booking won't take on its own.
 
 ## Where sessions happen
 
@@ -157,6 +163,6 @@ where I've been a Grey Shirt for about a decade.
 
 **Text (preferred):** 503-664-0546 — send "AI coaching"
 **Email:** eog@ernestofgaia.xyz
-**Coaching hours:** Sundays, Mondays and Tuesdays, 12pm to 8pm Pacific time
+**Booking:** ask the scheduling assistant in the chat, or text
 **Response time:** within 48 hours of your first message
 
